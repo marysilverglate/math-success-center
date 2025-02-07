@@ -1,0 +1,65 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.cdnfonts.com/css/trade-gothic-lt-std');
+
+/* COLOR PALETTE 
+        LU GOLD (#b5a36a) 
+        LU ALT GOlD (#857542)
+        LU BLACK (#101820)
+        Beige (#EDEBE6) 
+        Gray (#333333) 
+        LU ALT GOlD (#837549)
+    */
+    
+    /* VALID CONTRAST RATIO COMBINATION
+        LU Black     -(on)->   Beige, White, LU Gold
+        White        -(on)->   LU Black, Gray
+        LU Gold      -(on)->   LU Black, Gray
+        LU Alt Gold  -(on)->   White
+        Gray         -(on)->   White, Beige
+        Beige        -(on)->   Gray
+    */
+:root {
+    --lu-gold: #b5a36a;
+    --alt-lu-gold: #857542;
+    --lu-black: #101820;
+    --gray:#333;
+    --beige: #EDEBE6;
+}
+
+.gold-bg{
+    background-color: #b5a36a;
+}
+.black-bg{
+    background-color: #101820;
+}
+.gray-bg{
+    background-color: #333;
+}
+
+.alt-lu-gold-text{
+    color: #857542;
+}
+
+
+.gold-color {
+    color: #b5a36a;
+}
+.black-color { 
+    color: #101820;
+}
+.white-color {
+    color: white;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--alt-lu-gold);
+}
+
+html{
+    font-family: 'Trade Gothic LT Std', sans-serif;
+    background-color: #101820;
+    color:white;      
+}
