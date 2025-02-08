@@ -3,7 +3,7 @@
     import { Checkbox, Listgroup, Tabs, TabItem} from 'flowbite-svelte';
     import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, Label } from 'flowbite-svelte';
     import { onMount } from 'svelte';
-    
+
     // tutor filter
     let selectedSubjects = [];
     let result = [];
@@ -27,11 +27,13 @@
 
     // Find all tutors that can tutor the specified subject at current time
     function findTutor(e){
-        
+
         let currTime = getCurrHr() + (getCurrMin()/60);
         let currDay = getCurrDay();
+
+        
         // debug
-        // alert("Currtime: " + currTime);
+        // console.log("Currtime: " + currTime, "\nCurrDay: " + currDay);
 
         // Base case: not within operating days
         if (currDay === 0 || currDay === 6){
@@ -53,7 +55,7 @@
         } else if (currTime < 9 || currTime > 16){ //F
                 // alert('The Math Success Center operates between 9-4 PM on Fridays. \n\nPlease refer to the tutor-specific schedule toward the end of the page.');
                 // e.target.checked=false; //uncheck
-                findTutorAfterHours();
+                // findTutorAfterHours();
                 printResult("The Math Success Center operates from 9 AM to 4 PM on Fridays. Below are the tutor(s) available for the selected subject. Please refer to the tutor-specific schedule for their availability.");
                 return;
         }
@@ -76,6 +78,8 @@
                         // are they tutoring at current time
 
                         let dayCounter = 1;  //start at monday
+
+
                         tutorList[tutor].t_hours.forEach((dayOfWeek)=> {
                            
                             if (dayCounter === currDay){
@@ -165,7 +169,7 @@
         for (let tutor in tutorList){
                 for (let subject in selectedSubjects){
                     let searchResult = tutorList[tutor].t_subject.indexOf(selectedSubjects[subject]);
-                    if (searchResult !== -1){ //this tutor can each this subject
+                    if (searchResult !== -1){ //this tutor can teach this subject
 
                         // tutors can match many of the selected subject, ensure unique tutor in our result
                         let unique = true;
@@ -189,6 +193,19 @@
 
         const resultField = document.getElementById('result-field');
         resultField.innerText = "";
+
+
+        if(message){
+            // alert('has message: ' + message);
+            let liEl = document.createElement('li');
+            liEl.style.padding = "7px";
+            liEl.style.fontSize = "16px";
+            liEl.className = "lu-gold-color";
+            liEl.innerText = message;
+            resultField.appendChild(liEl);
+            return;
+        }
+
         
         // base case: nothing to print
         if (result.length <= 0 || !result){
@@ -198,17 +215,6 @@
             resultField.appendChild(liEl);
             return;
         }
-
-        if(message){
-            // alert('has message: ' + message);
-            let liEl = document.createElement('li');
-            liEl.style.padding = "7px";
-            liEl.style.fontSize = "16px";
-            liEl.className = "black-color";
-            liEl.innerText = message;
-            resultField.appendChild(liEl);
-        }
-
 
         // print all the tutors
         for (let val in result){
@@ -267,7 +273,7 @@
         let day = new Date();
         return day.getDay();
     }
-    
+
 
 
     const kevin = {
@@ -276,54 +282,54 @@
         // Tutor subject(s)
         t_subject : ["Computer Science", "Calculus 1", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
         // Tutor hours
-        t_hours : [
+        t_hours :  [
                     /*M*/ [
-                            [11, 12]
+                            [11, 12] , [12, 13], [13, 14]
                           ],
 
                     /*T*/ [
-                            [9,10], [10,11], [11,12], [12,13]
+                            [11, 12] , [12, 13], [13, 14]
                           ],
 
                     /*W*/ [
-                            [11, 12]
+                            [11, 12] , [12, 13], [13, 14]
                           ],
 
                     /*R*/ [
-                            [9,10], [10,11], [11,12], [12,13]
+                            [11, 12] , [12, 13], [13, 14]
                           ],
 
                     /*F*/ [
-                            [11,12], [12,13]
+                            [11, 12] , [12, 13], [13, 14]
                           ]
                   ]
     };
 
-    const brooke = {
+    const bailey = {
         // Tutor name
-        t_name : "Brooke", 
+        t_name : "Bailey", 
         // Tutor subject(s)
-        t_subject : ["Calculus 1", "Physics", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
+        t_subject : ["Calculus 1", "Calculus 2", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [9, 10], [14, 15], [15,16], [16,17], [17,18]
+                            [12, 13], [14, 15], [15,16], [16,17], [17,18]
                           ],
                     /*T*/ 
                           [
-                            [9,10], [10,11], [14.5, 15], [15,16]
+                            [9,10], [14.5,15], [15, 16], [16,17], [17,18]
                           ],
                     /*W*/ 
                           [
-                            [9,10]
+                            [14, 15]
                           ],
                     /*R*/ 
                           [
-                            [9,10], [10,11], [14.5, 15], [15,16]
+                            [14.5,15], [15, 16], [16,17], [17,18]
                           ], 
                     /*F*/ 
                           [
-                            [9,10]
+                            
                           ] 
                    ]
     };
@@ -332,27 +338,27 @@
         // Tutor name
         t_name : "Mattie", 
         // Tutor subject(s)
-        t_subject : ["Computer Science", "Calculus 2", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
+        t_subject : ["Computer Science", "Calculus 1", "Calculus 2", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [12,13], [13,14], [14,15]
+                            [10,11], [14,15]
                           ],
                     /*T*/ 
                           [
-                            [14,15], [15,16], [16,17], [17,18]
+                            [10,11], [11,12], [12,12.75]
                           ],
                     /*W*/ 
                           [
-                            [14,15], [15,16], [16,17], [17,18]
+                            [10,11], [14,15], [15,16], [16,17], [17, 18]
                           ],
                     /*R*/ 
                           [
-                            [12.5, 13], [13,14]
+                            [9, 10], [10,11], [11,12], [12, 12.75]
                           ], 
                     /*F*/ 
                           [
-                            [9,10], [10, 10.5]
+                            [10,11]
                           ] 
                    ]
     };
@@ -365,23 +371,23 @@
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [9,10], [10,11], [11,11.5]
+                            [9,10], [10,11], [11,11.75]
                           ],
                     /*T*/ 
                           [
-                            [13, 14], [14, 15], [15,15.5]
+                            [11, 12]
                           ],
                     /*W*/ 
                           [
-                            [9, 10], [10, 11], [11,11.5]
+                            [9, 10], [10, 11], [11,11.75]
                           ],
                     /*R*/ 
                           [
-                            [11, 12], [13.5, 14], [14, 15], [15, 15.5]
+                            [11, 12]
                           ], 
                     /*F*/ 
                           [
-                            [10.25, 11], [11,11.5], [13.5, 14], [14, 15], [15, 15.5]
+                            [9, 10], [10,11], [11, 11.75]
                           ] 
                    ]
     };
@@ -394,23 +400,23 @@
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [10, 11], [13,14]
+                            [10, 11], [11, 12], [15,16], [16,17], [17,18]
                           ],
                     /*T*/ 
                           [
-                            [13, 14], [14, 14.5]
+                            [14.5, 15], [15,16], [16, 17], [17, 18]
                           ],
                     /*W*/ 
                           [
-                            [10,11], [11,11.5]
+                            [10,11], [11,12]
                           ],
                     /*R*/ 
                           [
-                            [13,14], [14,15], [15,16], [16, 17], [17, 18]
+                            
                           ], 
                     /*F*/ 
                           [
-                            [10,11], [13,14], [14,15], [15,16]
+                            [11,12], [12,13], [13,14], [14,15], [15,15.5]
                           ] 
                    ]
     };
@@ -423,23 +429,22 @@
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [11,12], [13,14], [15.5,16], [16,17], [17,18]
+                            [12,13], [13,14], [14,15], [15,16], [16,17], [17, 17.5]
                           ],
                     /*T*/ 
                           [
-                            [13, 14]
                           ],
                     /*W*/ 
                           [
-                            [11,12], [13,14], [15.5, 16], [16,17], [17,18]
+                            [12,13], [13,14], [14,15], [15,16], [16,17], [17, 17.5]
                           ],
                     /*R*/ 
                           [
-                            [13,14], [16,17], [17,18]
+                            [14.5,15], [15,16], [16,17], [17,18]
                           ], 
                     /*F*/ 
                           [
-                            [11,12]
+
                           ] 
                    ]
     };
@@ -458,14 +463,14 @@
                           ],
                     /*W*/ 
                           [
-                            [12, 13], [13,14], [14,15]
+                            
                           ],
                     /*R*/ 
                           [
                           ], 
                     /*F*/ 
                           [
-                            [13,14], [14,15]
+                            
                           ] 
                    ]
     };
@@ -478,23 +483,23 @@
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [16,17], [17,18]
+                            
                           ],
                     /*T*/ 
                           [
-                            [11,12], [16,17], [17,18]
+                            [14.5, 15], [15, 16], [16, 17], [17, 18]
                           ],
                     /*W*/ 
                           [
-                            [12,13], [13,14], [16.5,17], [17,18]
+                            [15,16], [16, 17], [17, 18]
                           ],
                     /*R*/ 
                           [
-                            [11,12], [16,17], [17,18]
+                            [14.5, 15], [15, 16], [16, 17], [17, 18]
                           ], 
                     /*F*/ 
                           [
-                            [12,13]
+                            [15,16]
                           ] 
                    ]
     };
@@ -507,11 +512,11 @@
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [12,13], [14,15], [15,15.5], []
+                            
                           ],
                     /*T*/ 
                           [
-                            [12,13] 
+                            [10,11], [12,13], [13,14], [14, 14.5] 
                           ],
                     /*W*/ 
                           [
@@ -519,24 +524,21 @@
                           ],
                     /*R*/ 
                           [
-                            [12,13]
+                            [10,11], [12,13], [13,14], [14, 14.5] 
                           ], 
                     /*F*/ 
                           [
-                            [15,16]
+                            [14,15]
                           ] 
                    ]
     };
-
-    
-
 
 
 
     // create list to hold tutor infomation
     const tutorList = [ 
                      kevin, 
-                     brooke, 
+                     bailey, 
                      mattie, 
                      drJ, 
                      bennett, 
@@ -544,11 +546,61 @@
                      seth, 
                      katherine,
                      mary
-                      ];
+                    ];
         
 
+    //For full tutor schedule. Holds which tutors work at each time slot
+                            
+    const MON_9_10 = ['Bennett']
+    const MON_10_11 = ['Mattie', 'Seth', 'Bennett']
+    const MON_11_12 = ['Kevin', 'Seth', 'Bennett (-11:45)']
+    const MON_12_1 = ['Kevin', 'Jamie', 'Bailey']
+    const MON_1_2 = ['Kevin', 'Jamie']
+    const MON_2_3 = ['Jamie', 'Mattie', 'Bailey']
+    const MON_3_4 = ['Jamie', 'Bailey', 'Seth']
+    const MON_4_5 = ['Jamie', 'Bailey', 'Seth']
+    const MON_5_6 = ['Jamie (-5:30)', 'Bailey', 'Seth']
 
-   
+    const TUE_9_10 = ['Bailey']
+    const TUE_10_11 = ['Mattie', 'Mary']
+    const TUE_11_12 = ['Kevin', 'Mattie', 'Bennett']
+    const TUE_12_1 = ['Kevin', 'Mary', 'Mattie (-12:45)']
+    const TUE_1_2 = ['Kevin', 'Mary']
+    const TUE_2_3 = ['Mary (-2:30)', 'Katherine (2:30-)', 'Bailey (2:30-)', 'Seth (2:30-)']
+    const TUE_3_4 = ['Katherine', 'Bailey', 'Seth']
+    const TUE_4_5 = ['Katherine', 'Bailey', 'Seth']
+    const TUE_5_6 = ['Katherine', 'Bailey', 'Seth']
+
+    const WED_9_10 = ['Bennett']
+    const WED_10_11 = ['Mattie', 'Seth', 'Bennett']
+    const WED_11_12 = ['Kevin', 'Seth', 'Bennett (-11:45)']
+    const WED_12_1 = ['Kevin', 'Jamie']
+    const WED_1_2 = ['Kevin', 'Jamie']
+    const WED_2_3 = ['Jamie', 'Mattie', 'Bailey']
+    const WED_3_4 = ['Jamie', 'Katherine', 'Mattie']
+    const WED_4_5 = ['Jamie', 'Katherine', 'Mattie']
+    const WED_5_6 = ['Jamie', 'Katherine', 'Mattie']
+
+    const THUR_9_10 = ['Mattie']
+    const THUR_10_11 = ['Mattie', 'Mary']
+    const THUR_11_12 = ['Kevin', 'Mattie', 'Bennett']
+    const THUR_12_1 = ['Kevin', 'Mattie (-12:45)', 'Mary']
+    const THUR_1_2 = ['Kevin', 'Mary']
+    const THUR_2_3 = ['Mary (-2:30)', 'Jamie (2:30-)', 'Katherine (2:30-)', 'Bailey (2:30-)']
+    const THUR_3_4 = ['Jamie', 'Katherine', 'Bailey']
+    const THUR_4_5 = ['Jamie', 'Katherine', 'Bailey']
+    const THUR_5_6 = ['Jamie', 'Katherine', 'Bailey']
+
+
+    const FRI_9_10 = ['Bennett']
+    const FRI_10_11 = ['Mattie', 'Bennett']
+    const FRI_11_12 = ['Kevin', 'Seth', 'Bennett (-11:45)']
+    const FRI_12_1 = ['Kevin', 'Seth']
+    const FRI_1_2 = ['Kevin', 'Seth']
+    const FRI_2_3 = ['Seth', 'Mary']
+    const FRI_3_4 = ['Katherine', 'Seth (-2:30)']
+    const FRI_4_5 = ['CLOSED']
+    const FRI_5_6 = ['CLOSED']
 </script>
 
 <svelte:head>
@@ -717,33 +769,37 @@
 
                     <TableBodyRow>
                         <TableBodyCell>9:00 - 10:00 A.M.</TableBodyCell>
-
+                        <!-- MON -->
                         <TableBodyCell>
-                            <Listgroup items={['Brooke', 'Bennett']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={MON_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
 
+                        <!-- TUE -->
                         <TableBodyCell>
-                            <Listgroup items={['Brooke', 'Kevin']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={TUE_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
 
+                        <!-- WED -->
                         <TableBodyCell>
-                            <Listgroup items={['Brooke', 'Bennett']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={WED_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
 
+                        <!-- THU -->
                         <TableBodyCell>
-                            <Listgroup items={['Brooke', 'Kevin']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={THUR_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
 
+                        <!-- FRIDAY -->
                         <TableBodyCell>
-                            <Listgroup items={['Brooke', 'Mattie']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={FRI_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
@@ -752,28 +808,33 @@
 
                     <TableBodyRow>
                         <TableBodyCell>10:00 - 11:00 A.M.</TableBodyCell>
+                        <!-- MON -->
                         <TableBodyCell>
-                            <Listgroup items={['Seth', 'Bennett']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={MON_10_11} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- TUE -->
                         <TableBodyCell>
-                            <Listgroup items={['Kevin', 'Brooke']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={TUE_10_11} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- WED -->
                         <TableBodyCell>
-                            <Listgroup items={['Seth', 'Bennett']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={WED_10_11} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- THU -->
                         <TableBodyCell>
-                            <Listgroup items={['Brooke', 'Kevin']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={THUR_10_11} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- FRI -->
                         <TableBodyCell>
-                            <Listgroup items={['Seth', 'Mattie (-10:30)', 'Bennett (10:15-)']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={FRI_10_11} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
@@ -781,28 +842,33 @@
                     
                     <TableBodyRow>
                         <TableBodyCell>11:00 - 12:00 P.M.</TableBodyCell>
+                        <!-- MON -->
                         <TableBodyCell>
-                            <Listgroup items={['Jamie', 'Kevin', 'Bennett (-11:30)']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={MON_11_12} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- TUE -->
                         <TableBodyCell>
-                            <Listgroup items={['Kevin', 'Katherine']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={TUE_11_12} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- WED -->
                         <TableBodyCell>
-                            <Listgroup items={['Jamie', 'Kevin', 'Bennett (-11:30)', 'Seth (-11:30)']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={WED_11_12} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- THU -->
                         <TableBodyCell>
-                            <Listgroup items={['Kevin', 'Katherine', 'Bennett']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={THUR_11_12} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- FRI -->
                         <TableBodyCell>
-                            <Listgroup items={['Jamie', 'Kevin', 'Bennett (-11:30)']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={FRI_11_12} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
@@ -810,28 +876,33 @@
 
                     <TableBodyRow>
                         <TableBodyCell>12:00 - 1:00 P.M.</TableBodyCell>
+                        <!-- MON -->
                         <TableBodyCell>
-                            <Listgroup items={['Mary', 'Mattie']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={MON_12_1} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- TUE -->
                         <TableBodyCell>
-                            <Listgroup items={['Kevin', 'Mary']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={TUE_12_1} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- WED -->
                         <TableBodyCell>
-                            <Listgroup items={['Katherine', 'Mary', 'Dr. J']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={WED_12_1} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- THU -->
                         <TableBodyCell>
-                            <Listgroup items={['Kevin', 'Mary', 'Mattie (12:30-)']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={THUR_12_1} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- FRI -->
                         <TableBodyCell>
-                            <Listgroup items={['Kevin', 'Katherine']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={FRI_12_1} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
@@ -839,28 +910,33 @@
 
                     <TableBodyRow>
                         <TableBodyCell>1:00 - 2:00 P.M.</TableBodyCell>
+                        <!-- MON -->
                         <TableBodyCell>
-                            <Listgroup items={['Mattie', 'Jamie', 'Seth']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={MON_1_2} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- TUE -->
                         <TableBodyCell>
-                            <Listgroup items={['Jamie', 'Seth', 'Bennett']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={TUE_1_2} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- WED -->
                         <TableBodyCell>
-                            <Listgroup items={['Jamie', 'Katherine', 'Dr. J']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={WED_1_2} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- THU -->
                         <TableBodyCell>
-                            <Listgroup items={['Jamie', 'Seth', 'Bennett (1:30-)', 'Mattie']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={THUR_1_2} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- FRI -->
                         <TableBodyCell>
-                            <Listgroup items={['Dr. J', 'Seth', 'Bennett (1:30-)']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={FRI_1_2} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
@@ -868,28 +944,33 @@
 
                     <TableBodyRow>
                         <TableBodyCell>2:00 - 3:00 P.M.</TableBodyCell>
+                        <!-- MON -->
                         <TableBodyCell>
-                            <Listgroup items={['Mattie', 'Brooke', 'Mary']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={MON_2_3} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- TUE -->
                         <TableBodyCell>
-                            <Listgroup items={['Seth (-2:30)', 'Brooke (2:30-)', 'Bennett', 'Mattie']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={TUE_2_3} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- WED -->
                         <TableBodyCell>
-                            <Listgroup items={['Mary', 'Dr. J', 'Mattie']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={WED_2_3} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- THU -->
                         <TableBodyCell>
-                            <Listgroup items={['Seth', 'Brooke (2:30-)', 'Bennett']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={THUR_2_3} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- FRI -->
                         <TableBodyCell>
-                            <Listgroup items={['Seth', 'Dr. J', 'Bennett']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={FRI_2_3} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
@@ -897,28 +978,33 @@
 
                     <TableBodyRow>
                         <TableBodyCell>3:00 - 4:00 P.M.</TableBodyCell>
+                        <!-- MON -->
                         <TableBodyCell>
-                            <Listgroup items={['Mary (-3:30)', 'Brooke', 'Jamie (3:30-)']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={MON_3_4} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- TUE -->
                         <TableBodyCell>
-                            <Listgroup items={['Brooke', 'Bennett (-3:30)', 'Mattie']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={TUE_3_4} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- WED -->
                         <TableBodyCell>
-                            <Listgroup items={['Mary (-3:30)', 'Jamie (3:30-)', 'Mattie']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={WED_3_4} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- THU -->
                         <TableBodyCell>
-                            <Listgroup items={['Brooke', 'Seth', 'Bennett (-3:30)']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={THUR_3_4} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- FRI -->
                         <TableBodyCell>
-                            <Listgroup items={['Mary', 'Seth', 'Bennett (-3:30)']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={FRI_3_4} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
@@ -926,28 +1012,33 @@
 
                     <TableBodyRow>
                         <TableBodyCell>4:00 - 5:00 P.M.</TableBodyCell>
+                        <!-- MON -->
                         <TableBodyCell>
-                            <Listgroup items={['Jamie', 'Brooke', 'Katherine']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={MON_4_5} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- TUE -->
                         <TableBodyCell>
-                            <Listgroup items={['Katherine', 'Mattie']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={TUE_4_5} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- WED -->
                         <TableBodyCell>
-                            <Listgroup items={['Jamie', 'Katherine (4:30-)', 'Mattie']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={WED_4_5} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- THU -->
                         <TableBodyCell>
-                            <Listgroup items={['Jamie', 'Katherine', 'Seth']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={THUR_4_5} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- FRI -->
                         <TableBodyCell>
-                            <Listgroup items={['CLOSED']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={FRI_4_5} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
@@ -955,28 +1046,33 @@
 
                     <TableBodyRow>
                         <TableBodyCell>5:00 - 6:00 P.M.</TableBodyCell>
+                        <!-- MON -->
                         <TableBodyCell>
-                            <Listgroup items={['Jamie', 'Brooke', 'Katherine']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={MON_5_6} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- TUE -->
                         <TableBodyCell>
-                            <Listgroup items={['Katherine', 'Mattie']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={TUE_5_6} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- WED -->
                         <TableBodyCell>
-                            <Listgroup items={['Jamie', 'Katherine', 'Mattie']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={WED_5_6} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- THU -->
                         <TableBodyCell>
-                            <Listgroup items={['Jamie', 'Katherine', 'Seth']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={THUR_5_6} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
+                        <!-- FRI -->
                         <TableBodyCell>
-                            <Listgroup items={['CLOSED']} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={FRI_5_6} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 {item}
                             </Listgroup>
                         </TableBodyCell>
@@ -1004,7 +1100,7 @@
                                 <TableBodyCell>9:00 - 10:00 A.M.</TableBodyCell>
             
                                 <TableBodyCell>
-                                    <Listgroup items={['Brooke', 'Bennett']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={MON_9_10} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1014,7 +1110,7 @@
                                 <TableBodyCell>10:00 - 11:00 A.M.</TableBodyCell>
             
                                 <TableBodyCell>
-                                    <Listgroup items={['Seth', 'Bennett']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={MON_10_11} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1023,7 +1119,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>11:00 - 12:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Jamie', 'Kevin', 'Bennett (-11:30)']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={MON_11_12} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1032,7 +1128,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>12:00 - 1:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Mary', 'Mattie']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={MON_12_1} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1041,7 +1137,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>1:00 - 2:00 P.M.</TableBodyCell>
                                     <TableBodyCell>
-                                        <Listgroup items={['Mattie', 'Jamie', 'Seth']} let:item class="w-25 text-center shadow-md black-color">
+                                        <Listgroup items={MON_1_2} let:item class="w-25 text-center shadow-md black-color">
                                             {item}
                                         </Listgroup>
                                     </TableBodyCell>
@@ -1050,7 +1146,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>2:00 - 3:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Mattie', 'Brooke', 'Mary']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={MON_2_3} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1059,7 +1155,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>3:00 - 4:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Mary (-3:30)', 'Brooke', 'Jamie (3:30-)']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={MON_3_4} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1068,7 +1164,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>4:00 - 5:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Jamie', 'Brooke', 'Katherine']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={MON_4_5} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1077,7 +1173,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>5:00 - 6:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Jamie', 'Brooke', 'Katherine']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={MON_5_6} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1097,7 +1193,7 @@
                                 <TableBodyCell>9:00 - 10:00 A.M.</TableBodyCell>
             
                                 <TableBodyCell>
-                                    <Listgroup items={['Brooke', 'Kevin']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={TUE_9_10} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1108,7 +1204,7 @@
                                 <TableBodyCell>10:00 - 11:00 A.M.</TableBodyCell>
             
                                 <TableBodyCell>
-                                    <Listgroup items={['Brooke', 'Kevin']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={TUE_10_11} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1118,7 +1214,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>11:00 - 12:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Kevin', 'Katherine']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={TUE_11_12} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1127,7 +1223,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>12:00 - 1:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Kevin', 'Mary']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={TUE_12_1} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1136,7 +1232,7 @@
                             <TableBodyRow> 
                                 <TableBodyCell>1:00 - 2:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Jamie', 'Seth', 'Bennett']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={TUE_1_2} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1145,7 +1241,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>2:00 - 3:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Seth (-2:30)', 'Brooke (2:30-)', 'Bennett', 'Mattie']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={TUE_2_3} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1154,7 +1250,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>3:00 - 4:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Brooke', 'Bennett (-3:30)', 'Mattie']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={TUE_3_4} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1163,7 +1259,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>4:00 - 5:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Katherine', 'Mattie']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={TUE_4_5} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1172,7 +1268,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>5:00 - 6:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Katherine', 'Mattie']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={TUE_5_6} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1193,7 +1289,7 @@
                                 <TableBodyCell>9:00 - 10:00 A.M.</TableBodyCell>
             
                                 <TableBodyCell>
-                                    <Listgroup items={['Brooke', 'Bennett']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={WED_9_10} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1203,7 +1299,7 @@
                                 <TableBodyCell>10:00 - 11:00 A.M.</TableBodyCell>
             
                                 <TableBodyCell>
-                                    <Listgroup items={['Seth', 'Bennett']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={WED_10_11} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1212,7 +1308,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>11:00 - 12:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Jamie', 'Kevin', 'Bennett (-11:30)', 'Seth (-11:30)']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={WED_11_12} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1221,7 +1317,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>12:00 - 1:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Katherine', 'Mary', 'Dr. J']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={WED_12_1} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1230,7 +1326,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>1:00 - 2:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Jamie', 'Katherine', 'Dr. J']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={WED_1_2} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1239,7 +1335,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>2:00 - 3:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Mary', 'Dr. J', 'Mattie']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={WED_2_3} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1248,7 +1344,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>3:00 - 4:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Mary (-3:30)', 'Jamie (3:30-)', 'Mattie']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={WED_3_4} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1257,7 +1353,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>4:00 - 5:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Jamie', 'Katherine (4:30-)', 'Mattie']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={WED_4_5} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1266,7 +1362,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>5:00 - 6:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Jamie', 'Katherine', 'Mattie']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={WED_5_6} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1288,7 +1384,7 @@
                                 <TableBodyCell>9:00 - 10:00 A.M.</TableBodyCell>
             
                                 <TableBodyCell>
-                                    <Listgroup items={['Brooke', 'Kevin']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={THUR_9_10} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1296,10 +1392,10 @@
                             </TableBodyRow>
 
                             <TableBodyRow>
-                                <TableBodyCell>9:00 - 10:00 A.M.</TableBodyCell>
+                                <TableBodyCell>10:00 - 11:00 A.M.</TableBodyCell>
             
                                 <TableBodyCell>
-                                    <Listgroup items={['Brooke', 'Kevin']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={THUR_10_11} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1310,7 +1406,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>11:00 - 12:00 P.M.</TableBodyCell>
                                     <TableBodyCell>
-                                    <Listgroup items={['Kevin', 'Katherine', 'Bennett']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={THUR_11_12} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1319,7 +1415,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>12:00 - 1:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Kevin', 'Mary', 'Mattie (12:30-)']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={THUR_12_1} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1328,7 +1424,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>1:00 - 2:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Jamie', 'Seth', 'Bennett (1:30-)', 'Mattie']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={THUR_1_2} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1337,7 +1433,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>2:00 - 3:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Seth', 'Brooke (2:30-)', 'Bennett']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={THUR_2_3} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1346,7 +1442,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>3:00 - 4:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Brooke', 'Seth', 'Bennett (-3:30)']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={THUR_3_4} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1355,7 +1451,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>4:00 - 5:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Jamie', 'Katherine', 'Seth']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={THUR_4_5} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1364,7 +1460,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>5:00 - 6:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Jamie', 'Katherine', 'Seth']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={THUR_5_6} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1386,7 +1482,7 @@
                                 <TableBodyCell>9:00 - 10:00 A.M.</TableBodyCell>
             
                                 <TableBodyCell>
-                                    <Listgroup items={['Brooke', 'Mattie']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={FRI_9_10} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1394,10 +1490,10 @@
                             </TableBodyRow>
 
                             <TableBodyRow>
-                                <TableBodyCell>9:00 - 10:00 A.M.</TableBodyCell>
+                                <TableBodyCell>10:00 - 11:00 A.M.</TableBodyCell>
             
                                 <TableBodyCell>
-                                    <Listgroup items={['Seth', 'Mattie (-10:30)', 'Bennett (10:15-)']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={FRI_10_11} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1408,7 +1504,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>11:00 - 12:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Jamie', 'Kevin', 'Bennett (-11:30)']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={FRI_11_12} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1417,7 +1513,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>12:00 - 1:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Kevin', 'Katherine']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={FRI_12_1} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1426,7 +1522,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>1:00 - 2:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Dr. J', 'Seth', 'Bennett (1:30-)']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={FRI_1_2} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1435,7 +1531,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>2:00 - 3:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Seth', 'Dr. J', 'Bennett']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={FRI_2_3} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1444,7 +1540,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>3:00 - 4:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['Mary', 'Seth', 'Bennett (-3:30)']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={FRI_3_4} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1453,7 +1549,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>4:00 - 5:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['CLOSED']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={FRI_4_5} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>
@@ -1462,7 +1558,7 @@
                             <TableBodyRow>
                                 <TableBodyCell>5:00 - 6:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={['CLOSED']} let:item class="w-25 text-center shadow-md black-color">
+                                    <Listgroup items={FRI_5_6} let:item class="w-25 text-center shadow-md black-color">
                                         {item}
                                     </Listgroup>
                                 </TableBodyCell>

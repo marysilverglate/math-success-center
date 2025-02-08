@@ -1,0 +1,23 @@
+{
+	"/": [
+		"src/routes/+page.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/about-page": [
+		"src/routes/about-page/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/contact-page": [
+		"src/routes/contact-page/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/resource-page": [
+		"src/routes/resource-page/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/tutoring-page": [
+		"src/routes/tutoring-page/+page.ts",
+		"src/routes/+layout.ts"
+	]
+}

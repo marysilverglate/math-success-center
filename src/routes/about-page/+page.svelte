@@ -49,12 +49,12 @@
 
         </CardComp>
 
-        <!-- Brooke -->
+        <!-- Bailey -->
         <CardComp 
-            name="" 
+            name="Bailey" 
             imgUrl="" 
-            imgAlt="">
-            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Physics']}>
+            imgAlt="Image of Bailey">
+            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2']}>
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
@@ -69,7 +69,7 @@
                 </AccordionItem>
                 <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
-                    <p></p>
+                    <p>MTR</p>
                 </AccordionItem>
             </AccordianComp>
         </CardComp>
@@ -80,7 +80,7 @@
             imgUrl="./about-page-img/Mattie.jpeg" 
             imgAlt="Image of the tutor, Mattie">
             
-            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 2', 'Computer Science']}>
+            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Computer Science']}>
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
@@ -131,7 +131,7 @@
             name="Katherine"
             imgUrl="./about-page-img/Katherine.jpg" 
             imgAlt="Image of the tutor, Katherine">
-            <AccordianComp generalArray={generalTopic} specialArray={[]}>
+            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2']}>
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
