@@ -52,19 +52,19 @@
         <!-- Bailey -->
         <CardComp 
             name="Bailey" 
-            imgUrl="" 
+            imgUrl="./about-page-img/bailey.jpeg" 
             imgAlt="Image of Bailey">
             <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2']}>
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
-                        <Li><span>Status/Year:</span></Li>
-                        <Li><span>Major:</span> </Li>
-                        <Li><span>Minor:</span> </Li>
-                        <Li><span>Hometown:</span></Li>
-                        <Li><span>Favorite math course:</span></Li>
-                        <Li><span>Favorite thing about math:</span> </Li>
-                        <Li><span>Fun fact:</span></Li>
+                        <Li><span>Status/Year: </span>  Student, Junior</Li>
+                        <Li><span>Major: </span> Associates in Undergraduate Studies. Mathematics </Li>
+                        <Li><span>Minor: </span> Secondary Education and Spanish certificate</Li>
+                        <Li><span>Hometown: </span> St. Louis, MO </Li>
+                        <Li><span>Favorite math course: </span> I love Calculus 2 and 3</Li>
+                        <Li><span>Favorite thing about math: </span> I love how versatile math is and how much it is used in daily life. So many people use it without realizing it. The technology we use today is built on the math we developed all through time.</Li>
+                        <Li><span>Fun fact:</span> I love to sing, game, draw, and read!</Li>
                     </List>  
                 </AccordionItem>
                 <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
