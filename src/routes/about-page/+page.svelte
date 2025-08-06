@@ -84,7 +84,7 @@
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
-                        <Li><span>Status/Year:</span> Student, Sophomore</Li>
+                        <Li><span>Status/Year:</span> Student, Junior</Li>
                         <Li><span>Major:</span> Computer Science</Li>
                         <Li><span>Minor: </span> Data Science</Li>
                         <Li><span>Hometown:</span> St. Louis, Missouri</Li>
