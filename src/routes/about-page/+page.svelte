@@ -58,7 +58,7 @@
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
-                        <Li><span>Status/Year: </span>  Student, Junior</Li>
+                        <Li><span>Status/Year: </span>  Student, Senior</Li>
                         <Li><span>Major: </span> Associates in Undergraduate Studies. Mathematics </Li>
                         <Li><span>Minor: </span> Secondary Education and Spanish certificate</Li>
                         <Li><span>Hometown: </span> St. Louis, MO </Li>
@@ -111,7 +111,7 @@
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     
                     <List tag="ul" class="black-color text-left leading-loose">
-                        <Li><span>Status/Year:</span> Student, Junior</Li>
+                        <Li><span>Status/Year:</span> Student, Senior</Li>
                         <Li><span>Major:</span> Computer Science (BS) & Mathematics (BS) with a Research Emphasis</Li>
                         <Li><span>Hometown:</span> St. Charles, Missouri</Li>
                         <Li><span>Favorite math course:</span> Linear Algebra</Li>
@@ -135,7 +135,7 @@
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
-                        <Li><span>Status/Year:</span> Student, Junior</Li>
+                        <Li><span>Status/Year:</span> Student, Senior</Li>
                         <Li><span>Major:</span> Mathematics for Secondary Education with an unofficial add-on of a certification in middle school education</Li>
                         <Li><span>Hometown:</span> Originally from St. Ann, Missouri</Li>
                         <Li><span>Favorite math course:</span> Algebra</Li>
