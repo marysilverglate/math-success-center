@@ -427,7 +427,6 @@
                     </ul>
                 </TabItem>
 
-                </TabItem>
                 <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
                     <div slot="title" class="flex items-center gap-2 uppercase text-white">
                         <YoutubeSolid size="md" />
