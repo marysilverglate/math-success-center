@@ -745,7 +745,7 @@
     <hr class="">
 
     <!-- Tutor Schedule -->
-    <h2 class="text-4xl font-bold mt-10 text-center"> Tutor-Specific Scheudle </h2> 
+    <h2 class="text-4xl font-bold mt-10 text-center"> Tutor-Specific Schedule </h2> 
 
     <p class="mt-5 w-1/2 mx-auto text-center">Here is the full tutoring schedule if you'd like to plan ahead or prefer to manually search for a tutor.</p>
 
