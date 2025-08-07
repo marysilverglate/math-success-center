@@ -43,7 +43,7 @@
                 </AccordionItem>
                 <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
-                    <p>M T W R F</p>
+                    <p>M T W R</p>
                 </AccordionItem>
             </AccordianComp>
 
@@ -69,7 +69,7 @@
                 </AccordionItem>
                 <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
-                    <p>MTR</p>
+                    <p>M T W R</p>
                 </AccordionItem>
             </AccordianComp>
         </CardComp>
@@ -95,7 +95,7 @@
                 </AccordionItem>
                 <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
-                    <p>M T W R F</p>
+                    <p>M T W F</p>
                 </AccordionItem>
             </AccordianComp>
             
@@ -169,7 +169,7 @@
                 </AccordionItem>
                 <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
-                    <p>W F</p>
+                    <p>F</p>
                 </AccordionItem>
             </AccordianComp> 
         </CardComp>
@@ -193,7 +193,7 @@
                 </AccordionItem>
                 <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
-                    <p>M T W R F</p>
+                    <p>M T W R</p>
                 </AccordionItem>
             </AccordianComp>
         </CardComp>
