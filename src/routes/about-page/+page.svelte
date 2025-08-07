@@ -177,7 +177,7 @@
         <!-- Andrew -->
         <CardComp 
         name="Andrew" 
-        imgUrl="./about-page-img/Andrew.jpg" 
+        imgUrl="./about-page-img/Andrew.jpeg" 
         imgAlt="Image of the tutor, Andrew">
             <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2']}> 
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
@@ -201,7 +201,7 @@
         <!-- Néstor -->
         <CardComp 
             name="Néstor" 
-            imgUrl="./about-page-img/Néstor.jpeg" 
+            imgUrl="./about-page-img/Néstor.jpg" 
             imgAlt="Image of the tutor, Néstor">
             <Accordion>
                 <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1']}>
