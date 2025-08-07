@@ -174,21 +174,21 @@
             </AccordianComp> 
         </CardComp>
 
-        <!-- Bennett -->
+        <!-- Néstor -->
         <CardComp 
-        name="Bennett" 
-        imgUrl="./about-page-img/Bennett.jpg" 
-        imgAlt="Image of the tutor, Bennett">
-            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Computer Science']}> 
+        name="Néstor" 
+        imgUrl="./about-page-img/Nestor.jpg" 
+        imgAlt="Image of the tutor, Néstor">
+            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1']}> 
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
                         <Li><span>Status/Year:</span> Student, Senior</Li>
-                        <Li><span>Major:</span> Mathematics, Computer Science, and Data Science</Li>
-                        <Li><span>Hometown:</span> Palmyra, Missouri</Li>
-                        <Li><span>Favorite math course:</span> Machine Learning</Li>
-                        <Li><span>Favorite thing about math:</span> I like math because it isn’t writing.</Li>
-                        <Li><span>Fun fact:</span> I am on the Lindenwood baseball team.</Li>
+                        <Li><span>Major:</span> Cellular and Molecular Biology</Li>
+                        <Li><span>Hometown:</span> San Salvador, El Salvador</Li>
+                        <Li><span>Favorite math course:</span> College Algebra</Li>
+                        <Li><span>Favorite thing about math:</span> I like that math is descriptive—most of it was developed to describe the world around us.</Li>
+                        <Li><span>Fun fact:</span> I once took apart and rebuilt a broken espresso machine just to see how it worked!</Li>
                     </List>  
                 </AccordionItem>
                 <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
@@ -198,23 +198,22 @@
             </AccordianComp>
         </CardComp>
 
-        <!-- Kevin -->
+        <!-- Andrew -->
         <CardComp 
-            name="Kevin" 
-            imgUrl="./about-page-img/Kevin.jpeg" 
-            imgAlt="Image of the tutor, Kevin">
+            name="Andrew" 
+            imgUrl="./about-page-img/Andrew.jpeg" 
+            imgAlt="Image of the tutor, Andrew">
             <Accordion>
-                <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Computer Science']}>
+                <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2']}>
                     <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                         <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                         <List tag="ul" class="black-color text-left leading-loose">
-                            <Li><span>Status/Year:</span> Student, Senior</Li>
-                            <Li><span>Major:</span> Computer Science (BS) </Li>
-                            <Li><span>Minor:</span> Mathematics</Li>
-                            <Li><span>Hometown:</span> Born in Brooklyn, New York. Currently from Winfield, Missouri</Li>
-                            <Li><span>Favorite math course:</span> College Algebra, as it establishes the foundation and language for all upper-level math courses.</Li>
-                            <Li><span>Favorite thing about math:</span> I enjoy the precise nature of math and find it remarkable how it can model anything around us.</Li>
-                            <Li><span>Fun fact:</span> I can solve a 3x3 Rubik's Cube with a personal best time of under 30 seconds.</Li>
+                            <Li><span>Status/Year:</span> Student, Sophomore</Li>
+                            <Li><span>Major:</span> Mathematics</Li>
+                            <Li><span>Hometown:</span> St. Louis, Missouri</Li>
+                            <Li><span>Favorite math course:</span> Calculus 2</Li>
+                            <Li><span>Favorite thing about math:</span> Being able to complete a problem and have that topic “click.” Once it clicks the process of solving problems becomes satisfying and enjoyable!</Li>
+                            <Li><span>Fun fact:</span> I enjoy the outdoors, hanging out with friends and even going line dancing!</Li>
                         </List>  
                     </AccordionItem>
                     <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
