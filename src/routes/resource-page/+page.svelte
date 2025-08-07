@@ -30,7 +30,7 @@
         This page offers essential resources to help you excel in your math courses. Discover study guides, practice problems, and helpful tips on topics like algebra, calculus, and statistics. Use these tools to build your skills and boost your confidence in math.
     </p>
     <Accordion class="my-10 shadow-xl">
-        <!-- COLLEGE ALGEBRA -->
+        <!-- ALGEBRA -->
         <AccordionItem open classActive="gold-bg black-color" classInactive="text-white">
             <span slot="header" class="uppercase mx-auto font-bold text-lg" id="navitemAlgebra">Algebra</span>
             
@@ -62,6 +62,14 @@
                         <li>
                             ○ The Organic Chemistry Tutor
                         <a href="https://youtube.com/playlist?list=PL0o_zxa4K1BUeF2o-MlNpbRiS-oE2Kn6J&si=_VPHQK1-2g3jiM7d" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}><ArrowRightOutline/> </Button></a>
+                        </li>
+                        <li>
+                            ○ College Algebra Course Playlist
+                            <a href="https://www.youtube.com/watch?v=z3tzYiooEHY&list=PLjFXKF5HhxEREC1Co8QUgntwhyd7liPqh&pp=gAQB" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
+                        </li>
+                        <li>
+                            ○ Intermediate Algebra Course Playlist
+                            <a href="https://www.youtube.com/watch?v=6-kWooJ46GY&list=PLjFXKF5HhxEQKU5sbZ3Qup8X6s0e6_sRU&pp=gAQB" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
                         </li>
                     </ul>                   
         
@@ -147,7 +155,7 @@
             </Tabs>
         </AccordionItem>
 
-        <!-- Stats -->
+        <!-- Statistics -->
         <AccordionItem classActive="gold-bg black-color" classInactive="text-white">
             <span slot="header" class="uppercase mx-auto font-bold text-lg">Statistics</span>
             
@@ -192,6 +200,10 @@
                         <li>
                             ○ StatQuest with Josh Starmer
                             <a href="https://youtube.com/playlist?list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9&si=XYmT4VG2HaDFyA-z" target="_blank" ><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
+                        </li>
+                        <li>
+                            ○ Basic Statistics Course Playlist
+                            <a href="https://www.youtube.com/watch?v=brDUSkylNMs&list=PLLYmZ8egDOoxo2QsEHAM4JgdzxJzf353J" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
                         </li>
                     </ul>
                     
@@ -412,6 +424,52 @@
                             </div>
                             <a href="https://mathstat.slu.edu/resources/success-in-mathematics" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
                         </li>
+                    </ul>
+                </TabItem>
+
+                </TabItem>
+                <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
+                    <div slot="title" class="flex items-center gap-2 uppercase text-white">
+                        <YoutubeSolid size="md" />
+                        Youtube
+                    </div>
+                    <ul class="resource-list black-color pr-5">
+                        <li>
+                            ○ Basic Mathematics Course Playlist
+                            <a href="https://www.youtube.com/watch?v=qjk07NuEljU&list=PLjFXKF5HhxEQnkKTgGZhJI8c_-slQeZxp&pp=gAQB0gcJCV8EOCosWNin" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}><ArrowRightOutline/> </Button></a>
+                        </li>
+                    </ul>
+                    
+                </TabItem>
+
+
+                <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
+                    <div slot="title" class="flex items-center gap-2 uppercase text-white">
+                        <HammerOutline size="md" />
+                        Tools
+                    </div>
+                    <ul class="resource-list black-color pr-5">
+
+                        <li>
+                            <div>
+                                <p>
+                                    ○ Guide to Studying for Math
+                                </p>
+                                <p class="text-sm">
+                                    Useful tips to use when studying mathematics.
+                                </p>
+                            </div>
+
+                            <div>
+                                <Button shadow={true} size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] shadow={true} y-2 hover:text-[var(--lu-black)] hover:animate-none" color="dark" on:click={() => (defaultModal = true)}>Show</Button>
+                                <Modal title="How to Study for Math" bind:open={defaultModal} autoclose>
+                                    <center > <iframe src={"/How to Study for Math.pdf"} class="w-full h-screen"></iframe></center>
+                                </Modal>
+                                <a href="/How to Study for Math.pdf" target="_blank"><Button shadow={true} size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] my-1 hover:text-[var(--lu-black)] hover:animate-none" color="dark" outline={false}><FileDocOutline/></Button></a>
+                            </div>
+    
+                        </li>
+                        
                     </ul>
                 </TabItem>
             </Tabs>
