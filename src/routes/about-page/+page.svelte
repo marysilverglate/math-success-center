@@ -111,7 +111,7 @@
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     
                     <List tag="ul" class="black-color text-left leading-loose">
-                        <Li><span>Status/Year:</span> Student, Junior</Li>
+                        <Li><span>Status/Year:</span> Student, Senior</Li>
                         <Li><span>Major:</span> Computer Science (BS) & Mathematics (BS) with a Research Emphasis</Li>
                         <Li><span>Hometown:</span> St. Charles, Missouri</Li>
                         <Li><span>Favorite math course:</span> Linear Algebra</Li>
