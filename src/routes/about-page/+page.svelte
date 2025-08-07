@@ -177,7 +177,7 @@
         <!-- Néstor -->
         <CardComp 
         name="Néstor" 
-        imgUrl="./about-page-img/Néstor.jpg" 
+        imgUrl="./about-page-img/Nestor.jpg" 
         imgAlt="Image of the tutor, Néstor">
             <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1']}> 
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
