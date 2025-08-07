@@ -559,10 +559,10 @@
     const MON_1_2 = ['Néstor', 'Mattie', 'Mary']
     const MON_2_3 = ['Néstor', 'Mattie', 'Mary']
     const MON_3_4 = ['Mattie', 'Seth', 'Andrew']
-    const MON_4_5 = ['Mattie', 'Andrew', 'Seth (-4:30)', 'Katherine (4:30)']
+    const MON_4_5 = ['Mattie', 'Andrew', 'Seth (-4:30)', 'Katherine (4:30-)']
     const MON_5_6 = ['Mattie', 'Andrew', 'Katherine']
 
-    const TUE_9_10 = ['Bailey (9:30)', 'Mary']
+    const TUE_9_10 = ['Bailey (9:30-)', 'Mary']
     const TUE_10_11 = ['Seth (10:30-)', 'Mary (-10:30)', 'Bailey']
     const TUE_11_12 = ['Seth', 'Néstor', 'Andrew']
     const TUE_12_1 = ['Néstor', 'Andrew', 'Seth (-12:30)', 'Jamie (12:30-)']
@@ -582,7 +582,7 @@
     const WED_4_5 = ['Mattie', 'Seth (-4:30)', 'Andrew (-4:30)', 'Bailey (4:30-)', 'Katherine (4:30-)']
     const WED_5_6 = ['Mattie', 'Katherine', 'Bailey']
 
-    const THUR_9_10 = ['Bailey (9:30)', 'Mary']
+    const THUR_9_10 = ['Bailey (9:30-)', 'Mary']
     const THUR_10_11 = ['Seth (10:30-)', 'Mary (-10:30)', 'Bailey']
     const THUR_11_12 = ['Seth', 'Néstor', 'Andrew']
     const THUR_12_1 = ['Néstor', 'Andrew','Jamie']
