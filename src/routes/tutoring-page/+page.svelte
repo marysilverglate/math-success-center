@@ -421,9 +421,9 @@
                    ]
     };
 
-    const jamie = {
+    const alyssa = {
         // Tutor name
-        t_name : "Jamie", 
+        t_name : "Alyssa", 
         // Tutor subject(s)
         t_subject : ["Computer Science", "Calculus 2", "Calculus 1", "Physics", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
         // Tutor hours
@@ -543,7 +543,7 @@
                      mattie, 
                      drJ, 
                      andrew, 
-                     jamie, 
+                     alyssa, 
                      seth, 
                      katherine,
                      mary
@@ -553,9 +553,9 @@
     //For full tutor schedule. Holds which tutors work at each time slot
                             
     const MON_9_10 = ['Mattie', 'Bailey']
-    const MON_10_11 = ['Mattie', 'Bailey', 'Jamie']
-    const MON_11_12 = ['Seth', 'Bailey', 'Jamie']
-    const MON_12_1 = ['Néstor', 'Jamie', 'Bailey (-12:30)', 'Mary (12:30-)']
+    const MON_10_11 = ['Mattie', 'Bailey', 'Alyssa']
+    const MON_11_12 = ['Seth', 'Bailey', 'Alyssa']
+    const MON_12_1 = ['Néstor', 'Alyssa', 'Bailey (-12:30)', 'Mary (12:30-)']
     const MON_1_2 = ['Néstor', 'Mattie', 'Mary']
     const MON_2_3 = ['Néstor', 'Mattie', 'Mary']
     const MON_3_4 = ['Mattie', 'Seth', 'Andrew']
@@ -565,19 +565,19 @@
     const TUE_9_10 = ['Bailey (9:30-)', 'Mary']
     const TUE_10_11 = ['Seth (10:30-)', 'Mary (-10:30)', 'Bailey']
     const TUE_11_12 = ['Seth', 'Néstor', 'Andrew']
-    const TUE_12_1 = ['Néstor', 'Andrew', 'Seth (-12:30)', 'Jamie (12:30-)']
-    const TUE_1_2 = ['Néstor', 'Andrew', 'Jamie']
-    const TUE_2_3 = ['Andrew', 'Jamie']
-    const TUE_3_4 = ['Jamie', 'Bailey']
+    const TUE_12_1 = ['Néstor', 'Andrew', 'Seth (-12:30)', 'Alyssa (12:30-)']
+    const TUE_1_2 = ['Néstor', 'Andrew', 'Alyssa']
+    const TUE_2_3 = ['Andrew', 'Alyssa']
+    const TUE_3_4 = ['Alyssa', 'Bailey']
     const TUE_4_5 = ['Katherine', 'Bailey', 'Mattie']
     const TUE_5_6 = ['Katherine', 'Bailey', 'Mattie']
 
     const WED_9_10 = ['Mattie', 'Bailey']
-    const WED_10_11 = ['Jamie', 'Seth']
-    const WED_11_12 = ['Jamie', 'Seth', 'Mattie']
-    const WED_12_1 = ['Néstor', 'Jamie', 'Mary (12:30-)']
+    const WED_10_11 = ['Alyssa', 'Seth']
+    const WED_11_12 = ['Alyssa', 'Seth', 'Mattie']
+    const WED_12_1 = ['Néstor', 'Alyssa', 'Mary (12:30-)']
     const WED_1_2 = ['Néstor', 'Seth', 'Mary']
-    const WED_2_3 = ['Seth', 'Mary', 'Jamie']
+    const WED_2_3 = ['Seth', 'Mary', 'Alyssa']
     const WED_3_4 = ['Mattie', 'Seth', 'Andrew']
     const WED_4_5 = ['Mattie', 'Seth (-4:30)', 'Andrew (-4:30)', 'Bailey (4:30-)', 'Katherine (4:30-)']
     const WED_5_6 = ['Mattie', 'Katherine', 'Bailey']
@@ -585,9 +585,9 @@
     const THUR_9_10 = ['Bailey (9:30-)', 'Mary']
     const THUR_10_11 = ['Seth (10:30-)', 'Mary (-10:30)', 'Bailey']
     const THUR_11_12 = ['Seth', 'Néstor', 'Andrew']
-    const THUR_12_1 = ['Néstor', 'Andrew','Jamie']
-    const THUR_1_2 = ['Néstor', 'Andrew','Jamie']
-    const THUR_2_3 = ['Néstor', 'Andrew','Jamie (-2:30)', 'Seth (2:30-)']
+    const THUR_12_1 = ['Néstor', 'Andrew','Alyssa']
+    const THUR_1_2 = ['Néstor', 'Andrew','Alyssa']
+    const THUR_2_3 = ['Néstor', 'Andrew','Alyssa (-2:30)', 'Seth (2:30-)']
     const THUR_3_4 = ['Andrew (-3:30)', 'Seth', 'Bailey']
     const THUR_4_5 = ['Néstor', 'Katherine', 'Bailey']
     const THUR_5_6 = ['Néstor', 'Katherine', 'Bailey']
@@ -595,8 +595,8 @@
 
     const FRI_9_10 = ['Katherine', 'Dr. J']
     const FRI_10_11 = ['Katherine', 'Dr. J', 'Mattie']
-    const FRI_11_12 = ['Jamie' , 'Katherine']
-    const FRI_12_1 = ['Jamie' , 'Katherine']
+    const FRI_11_12 = ['Alyssa' , 'Katherine']
+    const FRI_12_1 = ['Alyssa' , 'Katherine']
     const FRI_1_2 = ['Katherine', 'Seth']
     const FRI_2_3 = ['Seth', 'Andrew']
     const FRI_3_4 = ['Andrew']
@@ -710,7 +710,7 @@
                 <Checkbox class="p-2" value="Brooke" on:change={(e) => handleSelectionChange(e, "tutor")}>Brooke</Checkbox>
                 <Checkbox class="p-2" value="Mattie" on:change={(e) => handleSelectionChange(e, "tutor")}>Mattie</Checkbox>
                 <Checkbox class="p-2" value="Seth" on:change={(e) => handleSelectionChange(e, "tutor")}>Seth</Checkbox>
-                <Checkbox class="p-2" value="Jamie" on:change={(e) => handleSelectionChange(e, "tutor")}>Jamie</Checkbox>
+                <Checkbox class="p-2" value="Alyssa" on:change={(e) => handleSelectionChange(e, "tutor")}>Alyssa</Checkbox>
                 <Checkbox class="p-2" value="Katherine" on:change={(e) => handleSelectionChange(e, "tutor")}>Katherine</Checkbox>
                 <Checkbox class="p-2" value="Kevin" on:change={(e) => handleSelectionChange(e, "tutor")}>Kevin</Checkbox>
                 <Checkbox class="p-2" value="Mary" on:change={(e) => handleSelectionChange(e, "tutor")}>Mary</Checkbox>
