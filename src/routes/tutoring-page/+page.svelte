@@ -284,7 +284,7 @@
         // Tutor hours
         t_hours :  [
                     /*M*/ [
-                            [15, 16] , [16, 17], [17, 18]
+                            [16, 17], [17, 18]
                           ],
 
                     /*T*/ [
@@ -292,11 +292,11 @@
                           ],
 
                     /*W*/ [
-                            [15, 16.5]
+                            [15, 16], [16, 17]
                           ],
 
                     /*R*/ [
-                            [11, 12] , [12, 13], [13, 14] , [14, 15.5]
+                            [11, 12] , [12, 13], [13, 14] , [14, 15]
                           ],
 
                     /*F*/ [
@@ -317,15 +317,15 @@
                           ],
                     /*T*/ 
                           [
-                            [9.5,10], [10,11], [15, 16], [16,17], [17,18]
+                            [9.5,10], [10,11], [11,12], [12,12.5] [15, 16], [16,17], [17,18]
                           ],
                     /*W*/ 
                           [
-                            [9, 10] , [16.5, 17] , [17, 18]
+                            [9, 10]
                           ],
                     /*R*/ 
                           [
-                            [9.5,10], [10,11], [15, 16], [16,17], [17,18]
+                            [9.5,10], [10,11], [11,12], [12,12.5], [16.5,17], [17,18]
                           ], 
                     /*F*/ 
                           [
@@ -375,19 +375,19 @@
                           ],
                     /*T*/ 
                           [
-                            [11, 12] , [12,13], [13,14]
+                            [12.5,13], [13,14]
                           ],
                     /*W*/ 
                           [
-                            [12,13], [13,14]
+                            [12,13], [13,14], [17,18]
                           ],
                     /*R*/ 
                           [
-                            [11, 12] , [12,13], [13,14] , [14,15] , [16,17], [17,18]
+                            [12.5,13], [13,14] , [14,15] , [15,16], [17,18]
                           ], 
                     /*F*/ 
                           [
-                           
+                            [14,15]
                           ] 
                    ]
     };
@@ -408,15 +408,15 @@
                           ],
                     /*W*/ 
                           [
-                            [10,11], [11,12] , [13,14], [14,15], [15,16] , [16,16.5]
+                            [10,11], [11,12] , [13,14], [15,16] , [16,16.5]
                           ],
                     /*R*/ 
                           [
-                            [10.5,11], [11,12] , [14.5,15], [15,16]
+                            [10.5,11], [11,12] , [14.5,15], [15,16], [16,17]
                           ], 
                     /*F*/ 
                           [
-                            [13,14], [14,15]
+                            [13,14], [15,16]
                           ] 
                    ]
     };
@@ -558,14 +558,14 @@
     const MON_12_1 = ['Néstor', 'Alyssa', 'Bailey (-12:30)', 'Mary (12:30-)']
     const MON_1_2 = ['Néstor', 'Mattie', 'Mary']
     const MON_2_3 = ['Néstor', 'Mattie', 'Mary']
-    const MON_3_4 = ['Mattie', 'Seth', 'Andrew']
+    const MON_3_4 = ['Mattie', 'Seth']
     const MON_4_5 = ['Mattie', 'Andrew', 'Seth (-4:30)', 'Katherine (4:30-)']
     const MON_5_6 = ['Mattie', 'Andrew', 'Katherine']
 
     const TUE_9_10 = ['Bailey (9:30-)', 'Mary']
     const TUE_10_11 = ['Seth (10:30-)', 'Mary (-10:30)', 'Bailey']
-    const TUE_11_12 = ['Seth', 'Néstor', 'Andrew']
-    const TUE_12_1 = ['Néstor', 'Andrew', 'Seth (-12:30)', 'Alyssa (12:30-)']
+    const TUE_11_12 = ['Seth', 'Bailey', 'Andrew']
+    const TUE_12_1 = ['Andrew', 'Seth (-12:30)', 'Alyssa (12:30-)', 'Néstor (12:30-)', 'Bailey (-12:30)']
     const TUE_1_2 = ['Néstor', 'Andrew', 'Alyssa']
     const TUE_2_3 = ['Andrew', 'Alyssa']
     const TUE_3_4 = ['Alyssa', 'Bailey']
@@ -577,19 +577,19 @@
     const WED_11_12 = ['Alyssa', 'Seth', 'Mattie']
     const WED_12_1 = ['Néstor', 'Alyssa', 'Mary (12:30-)']
     const WED_1_2 = ['Néstor', 'Seth', 'Mary']
-    const WED_2_3 = ['Seth', 'Mary', 'Alyssa']
+    const WED_2_3 = ['Andrew', 'Mary', 'Alyssa']
     const WED_3_4 = ['Mattie', 'Seth', 'Andrew']
-    const WED_4_5 = ['Mattie', 'Seth (-4:30)', 'Andrew (-4:30)', 'Bailey (4:30-)', 'Katherine (4:30-)']
-    const WED_5_6 = ['Mattie', 'Katherine', 'Bailey']
+    const WED_4_5 = ['Mattie', 'Seth (-4:30)', 'Andrew', 'Katherine (4:30-)']
+    const WED_5_6 = ['Mattie', 'Katherine', 'Néstor']
 
     const THUR_9_10 = ['Bailey (9:30-)', 'Mary']
     const THUR_10_11 = ['Seth (10:30-)', 'Mary (-10:30)', 'Bailey']
-    const THUR_11_12 = ['Seth', 'Néstor', 'Andrew']
-    const THUR_12_1 = ['Néstor', 'Andrew','Alyssa']
+    const THUR_11_12 = ['Seth', 'Bailey', 'Andrew']
+    const THUR_12_1 = ['Néstor (12:30-)', 'Andrew','Alyssa', 'Bailey (-12:30)']
     const THUR_1_2 = ['Néstor', 'Andrew','Alyssa']
     const THUR_2_3 = ['Néstor', 'Andrew','Alyssa (-2:30)', 'Seth (2:30-)']
-    const THUR_3_4 = ['Andrew (-3:30)', 'Seth', 'Bailey']
-    const THUR_4_5 = ['Néstor', 'Katherine', 'Bailey']
+    const THUR_3_4 = ['Seth', 'Néstor']
+    const THUR_4_5 = ['Katherine', 'Bailey(4:30-)', 'Seth']
     const THUR_5_6 = ['Néstor', 'Katherine', 'Bailey']
 
 
@@ -598,8 +598,8 @@
     const FRI_11_12 = ['Alyssa' , 'Katherine']
     const FRI_12_1 = ['Alyssa' , 'Katherine']
     const FRI_1_2 = ['Katherine', 'Seth']
-    const FRI_2_3 = ['Seth', 'Andrew']
-    const FRI_3_4 = ['Andrew']
+    const FRI_2_3 = ['Néstor', 'Andrew']
+    const FRI_3_4 = ['Seth']
     const FRI_4_5 = ['CLOSED']
     const FRI_5_6 = ['CLOSED']
 </script>
