@@ -227,7 +227,7 @@
         <!-- Alyssa -->
         <CardComp
             name="Alyssa" 
-            imgUrl="./about-page-img/Jamie.jpg" 
+            imgUrl="./about-page-img/Alyssa.jpg" 
             imgAlt="Image of the tutor, Alyssa">
             <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Physics', 'Computer Science']}>
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
