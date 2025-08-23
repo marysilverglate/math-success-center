@@ -37,10 +37,30 @@
             <Tabs tabStyle="underline">
                 <TabItem open defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
                     <div slot="title" class="flex gap-2 uppercase text-white">
+                        <YoutubeSolid size="md" />
+                        Youtube
+                    </div>
+                    <ul class="resource-list black-color pr-5">
+                        <li>
+                            ○ Lindenwood College Algebra Course Playlist
+                            <a href="https://www.youtube.com/watch?v=z3tzYiooEHY&list=PLjFXKF5HhxEREC1Co8QUgntwhyd7liPqh&pp=gAQB" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
+                        </li>
+                        <li>
+                            ○ Lindenwood Intermediate Algebra Course Playlist
+                            <a href="https://www.youtube.com/watch?v=6-kWooJ46GY&list=PLjFXKF5HhxEQKU5sbZ3Qup8X6s0e6_sRU&pp=gAQB" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
+                        </li>
+                        <li>
+                            ○ The Organic Chemistry Tutor
+                        <a href="https://youtube.com/playlist?list=PL0o_zxa4K1BUeF2o-MlNpbRiS-oE2Kn6J&si=_VPHQK1-2g3jiM7d" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}><ArrowRightOutline/> </Button></a>
+                        </li>
+                    </ul>  
+                    
+                </TabItem>
+                <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
+                    <div slot="title" class="flex gap-2 uppercase text-white">
                         <WindowSolid size="md" />
                         Websites
                     </div>
-
                     <ul class="resource-list black-color pr-5">
                         <li>
                             ○ Paul’s Online Math Notes (Lamar University)
@@ -50,28 +70,7 @@
                             ○ Purple Math
                             <a href="https://www.mathhelp.com/college-algebra-help/?utm_campaign=purplemath&utm_source=_mh_calg&utm_medium=course" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
                         </li>
-                    </ul>
-                    
-                </TabItem>
-                <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
-                    <div slot="title" class="flex gap-2 uppercase text-white">
-                        <YoutubeSolid size="md" />
-                        Youtube
-                    </div>
-                    <ul class="resource-list black-color pr-5">
-                        <li>
-                            ○ The Organic Chemistry Tutor
-                        <a href="https://youtube.com/playlist?list=PL0o_zxa4K1BUeF2o-MlNpbRiS-oE2Kn6J&si=_VPHQK1-2g3jiM7d" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}><ArrowRightOutline/> </Button></a>
-                        </li>
-                        <li>
-                            ○ College Algebra Course Playlist
-                            <a href="https://www.youtube.com/watch?v=z3tzYiooEHY&list=PLjFXKF5HhxEREC1Co8QUgntwhyd7liPqh&pp=gAQB" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
-                        </li>
-                        <li>
-                            ○ Intermediate Algebra Course Playlist
-                            <a href="https://www.youtube.com/watch?v=6-kWooJ46GY&list=PLjFXKF5HhxEQKU5sbZ3Qup8X6s0e6_sRU&pp=gAQB" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
-                        </li>
-                    </ul>                   
+                    </ul>                 
         
                 </TabItem>
 
@@ -97,29 +96,6 @@
             <Tabs tabStyle="underline">
                 <TabItem open defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
                     <div slot="title" class="flex items-center gap-2 uppercase text-white">
-                        <WindowSolid size="md" />
-                        Websites
-                    </div>
-
-                    <ul class="resource-list black-color pr-5">
-                        <li>
-                            ○ Calculus.org
-                            <a href="http://www.calculus.org" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
-                        </li>
-                        <li>
-                            ○ Khan Academy (Calculus 1)
-                            <a href="https://www.khanacademy.org/math/calculus-1" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
-                        </li>
-                        <li>
-                            ○ Paul's Online Notes
-                            <a href="https://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
-                        </li>
-                    </ul>
-                
-                    
-                </TabItem>
-                <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
-                    <div slot="title" class="flex items-center gap-2 uppercase text-white">
                         <YoutubeSolid size="md" />
                         Youtube
                     </div>
@@ -134,6 +110,26 @@
                         </li>
                     </ul>
                     
+                </TabItem>
+                <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
+                    <div slot="title" class="flex items-center gap-2 uppercase text-white">
+                        <WindowSolid size="md" />
+                        Websites
+                    </div>
+                    <ul class="resource-list black-color pr-5">
+                        <li>
+                            ○ Calculus.org
+                            <a href="http://www.calculus.org" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
+                        </li>
+                        <li>
+                            ○ Khan Academy (Calculus 1)
+                            <a href="https://www.khanacademy.org/math/calculus-1" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
+                        </li>
+                        <li>
+                            ○ Paul's Online Notes
+                            <a href="https://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
+                        </li>
+                    </ul>
                 </TabItem>
 
                 <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
@@ -162,33 +158,14 @@
             <Tabs tabStyle="underline">
                 <TabItem open defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
                     <div slot="title" class="flex items-center gap-2 uppercase text-white">
-                        <WindowSolid size="md" />
-                        Websites
-                    </div>
-
-                    <ul class="resource-list black-color pr-5">
-                        <li>
-                            ○ Math is Fun
-                            <a href="https://www.mathsisfun.com/data/index.html" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
-                        </li>
-                        <li>
-                            ○ Statistics How To
-                            <a href="https://www.statisticshowto.com/probability-and-statistics/" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
-                        </li>
-                        <li>
-                            ○ Khan Academy
-                            <a href="https://www.khanacademy.org/math/statistics-probability" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
-                        </li>
-                    </ul>
-                
-                    
-                </TabItem>
-                <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
-                    <div slot="title" class="flex items-center gap-2 uppercase text-white">
                         <YoutubeSolid size="md" />
                         Youtube
                     </div>
                     <ul class="resource-list black-color pr-5">
+                        <li>
+                            ○ Lindenwood Basic Statistics Course Playlist
+                            <a href="https://www.youtube.com/watch?v=brDUSkylNMs&list=PLLYmZ8egDOoxo2QsEHAM4JgdzxJzf353J" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
+                        </li>
                         <li>
                             ○ The Organic Chemistry Tutor
                             <a href="https://youtube.com/playlist?list=PL0o_zxa4K1BVsziIRdfv4Hl4UIqDZhXWV&si=_5H2NOWDBepkvL10" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
@@ -201,9 +178,27 @@
                             ○ StatQuest with Josh Starmer
                             <a href="https://youtube.com/playlist?list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9&si=XYmT4VG2HaDFyA-z" target="_blank" ><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
                         </li>
+                    </ul>
+                
+                    
+                </TabItem>
+                <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
+                    <div slot="title" class="flex items-center gap-2 uppercase text-white">
+                        <WindowSolid size="md" />
+                        Websites
+                    </div>
+                    <ul class="resource-list black-color pr-5">
                         <li>
-                            ○ Basic Statistics Course Playlist
-                            <a href="https://www.youtube.com/watch?v=brDUSkylNMs&list=PLLYmZ8egDOoxo2QsEHAM4JgdzxJzf353J" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
+                            ○ Math is Fun
+                            <a href="https://www.mathsisfun.com/data/index.html" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
+                        </li>
+                        <li>
+                            ○ Statistics How To
+                            <a href="https://www.statisticshowto.com/probability-and-statistics/" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
+                        </li>
+                        <li>
+                            ○ Khan Academy
+                            <a href="https://www.khanacademy.org/math/statistics-probability" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
                         </li>
                     </ul>
                     
@@ -268,10 +263,30 @@
             <Tabs tabStyle="underline">
                 <TabItem open defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
                     <div slot="title" class="flex items-center gap-2 uppercase text-white">
+                        <YoutubeSolid size="md" />
+                        Youtube
+                    </div>
+                    <ul class="resource-list black-color pr-5">
+                        <li>
+                            ○ The Coding Train
+                            <a href="https://youtube.com/playlist?list=PLWFlMBumSLSbp_Cmwca3-zRiPDT10e85_&si=Nsu-GtYmYuoX3UsV" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}><ArrowRightOutline/> </Button></a>
+                        </li>
+                        <li>
+                            ○ FreeCodeCamp.org
+                            <a href="https://youtube.com/@freecodecamp?si=FxdRyYQUlpDw_XzF" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}><ArrowRightOutline/> </Button></a>
+                        </li>
+                        <li>
+                            ○ CS Dojo
+                            <a href="https://youtube.com/@csdojo?si=NuoyBsNYyDIlPhOj" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}><ArrowRightOutline/> </Button></a>
+                        </li>
+                    </ul>
+                </TabItem>
+
+                <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
+                    <div slot="title" class="flex items-center gap-2 uppercase text-white">
                         <WindowSolid size="md" />
                         Websites
                     </div>
-
                     <ul class="resource-list black-color pr-5">
                         <li>
                             ○ Code Academy (Online code-learning platform)
@@ -290,29 +305,6 @@
                             <a href="https://cs50.harvard.edu/college/2023/fall/syllabus/" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
                         </li>
                     </ul>
-                
-                    
-                </TabItem>
-                <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
-                    <div slot="title" class="flex items-center gap-2 uppercase text-white">
-                        <YoutubeSolid size="md" />
-                        Youtube
-                    </div>
-                    <ul class="resource-list black-color pr-5">
-                        <li>
-                            ○ The Coding Train
-                            <a href="https://youtube.com/playlist?list=PLWFlMBumSLSbp_Cmwca3-zRiPDT10e85_&si=Nsu-GtYmYuoX3UsV" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}><ArrowRightOutline/> </Button></a>
-                        </li>
-                        <li>
-                            ○ FreeCodeCamp.org
-                            <a href="https://youtube.com/@freecodecamp?si=FxdRyYQUlpDw_XzF" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}><ArrowRightOutline/> </Button></a>
-                        </li>
-                        <li>
-                            ○ CS Dojo
-                            <a href="https://youtube.com/@csdojo?si=NuoyBsNYyDIlPhOj" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}><ArrowRightOutline/> </Button></a>
-                        </li>
-                    </ul>
-                    
                 </TabItem>
 
                 <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
@@ -350,26 +342,6 @@
             <Tabs tabStyle="underline">
                 <TabItem open defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
                     <div slot="title" class="flex items-center gap-2 uppercase text-white">
-                        <WindowSolid size="md" />
-                        Websites
-                    </div>
-
-                    <ul class="resource-list black-color pr-5">
-                        <li>
-                            
-                            ○ Hyperphysics
-                            <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
-                        </li>
-                        <li>
-                            ○ Physics Classroom
-                            <a href="https://www.physicsclassroom.com/Physics-Video-Tutorial" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
-                        </li>
-                    </ul>
-                
-                    
-                </TabItem>
-                <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
-                    <div slot="title" class="flex items-center gap-2 uppercase text-white">
                         <YoutubeSolid size="md" />
                         Youtube
                     </div>
@@ -383,7 +355,24 @@
                             <a href="https://youtube.com/playlist?list=PLWFlMBumSLSbp_Cmwca3-zRiPDT10e85_&si=Nsu-GtYmYuoX3UsV" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}><ArrowRightOutline/> </Button></a>
                         </li>
                     </ul>
-                    
+                </TabItem>
+
+                <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
+                    <div slot="title" class="flex items-center gap-2 uppercase text-white">
+                        <WindowSolid size="md" />
+                        Websites
+                    </div>
+                    <ul class="resource-list black-color pr-5">
+                        <li>
+                            
+                            ○ Hyperphysics
+                            <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
+                        </li>
+                        <li>
+                            ○ Physics Classroom
+                            <a href="https://www.physicsclassroom.com/Physics-Video-Tutorial" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
+                        </li>
+                    </ul>
                 </TabItem>
 
                 <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
@@ -408,10 +397,22 @@
             <Tabs tabStyle="underline">
                 <TabItem open defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
                     <div slot="title" class="flex items-center gap-2 uppercase text-white">
+                        <YoutubeSolid size="md" />
+                        Youtube
+                    </div>
+                    <ul class="resource-list black-color pr-5">
+                        <li>
+                            ○ Lindenwood Basic Mathematics Course Playlist
+                            <a href="https://www.youtube.com/watch?v=qjk07NuEljU&list=PLjFXKF5HhxEQnkKTgGZhJI8c_-slQeZxp&pp=gAQB0gcJCV8EOCosWNin" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}><ArrowRightOutline/> </Button></a>
+                        </li>
+                    </ul>
+                </TabItem>
+
+                <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
+                    <div slot="title" class="flex items-center gap-2 uppercase text-white">
                         <WindowSolid size="md" />
                         Websites
                     </div>
-
                     <ul class="resource-list black-color pr-5">
                         <li>
                             <div>
@@ -425,20 +426,6 @@
                             <a href="https://mathstat.slu.edu/resources/success-in-mathematics" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
                         </li>
                     </ul>
-                </TabItem>
-
-                <TabItem defaultClass="p-4" activeClasses="border-b-4 border-[#b5a36a] gold-color">
-                    <div slot="title" class="flex items-center gap-2 uppercase text-white">
-                        <YoutubeSolid size="md" />
-                        Youtube
-                    </div>
-                    <ul class="resource-list black-color pr-5">
-                        <li>
-                            ○ Basic Mathematics Course Playlist
-                            <a href="https://www.youtube.com/watch?v=qjk07NuEljU&list=PLjFXKF5HhxEQnkKTgGZhJI8c_-slQeZxp&pp=gAQB0gcJCV8EOCosWNin" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}><ArrowRightOutline/> </Button></a>
-                        </li>
-                    </ul>
-                    
                 </TabItem>
 
 
