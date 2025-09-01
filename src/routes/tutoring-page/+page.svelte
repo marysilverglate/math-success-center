@@ -934,7 +934,7 @@
     <!-- Tutor Schedule -->
     <h2 class="text-4xl font-bold mt-10 text-center"> Tutor-Specific Schedule </h2> 
 
-    <p class="mt-5 w-1/2 mx-auto text-center">Here is the full tutoring schedule if you'd like to plan ahead or prefer to manually search for a tutor.<br>Note that tutors in black can help with mathematics, while those in red also assist with computer science, and those in purple also assist with computer science and physics. </p>
+    <p class="mt-5 w-1/2 mx-auto text-center">Here is the full tutoring schedule if you'd like to plan ahead or prefer to manually search for a tutor.<br>Note: Tutors shown in black assist with mathematics only, those in red also support computer science, and those in purple support both computer science and physics.</p>
 
     <!-- Tutor Scheudle Tablet and Desktop view -->
     <div class="flex justify-center mb-20">
