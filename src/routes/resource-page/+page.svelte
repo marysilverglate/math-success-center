@@ -413,19 +413,6 @@
                         <WindowSolid size="md" />
                         Websites
                     </div>
-                    <ul class="resource-list black-color pr-5">
-                        <li>
-                            <div>
-                                <p>
-                                    ○ Success in Mathematics (SLU)
-                                </p>
-                                <p class="text-sm">
-                                    This guide from Saint Louis University (1993) offers comprehensive strategies for studying, problem-solving, test preparation, and seeking help in mathematics to foster understanding, skill development, and academic success.
-                                </p>
-                            </div>
-                            <a href="https://mathstat.slu.edu/resources/success-in-mathematics" target="_blank"><Button size="sm" class="align-middle animate-pulse black-bg hover:bg-[#b5a36a] hover:text-[var(--lu-black)] hover:animate-none" shadow={true} color="dark" outline={false}> <ArrowRightOutline/> </Button></a>
-                        </li>
-                    </ul>
                 </TabItem>
 
 
