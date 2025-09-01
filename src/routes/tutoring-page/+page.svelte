@@ -581,9 +581,12 @@
     days.forEach((day, dayIndex) => {
     schedule[day] = {};
     timeSlots.forEach(([start, end]) => {
-    schedule[day][`${start}_${end}`] = tutorList.filter(
-      tutor => tutor.t_hours[dayIndex]?.some(([s, e]) => s < end && e > start)
-    ).map(tutor => tutor.t_name);
+    schedule[day][`${start}_${end}`] = tutorList
+      .filter(tutor => {
+        const hours = tutor.t_hours?.[dayIndex];
+        return Array.isArray(hours) && hours.some(([s, e]) => s < end && e > start);
+      })
+      .map(tutor => tutor.t_name);
     });
     });
 
