@@ -619,7 +619,6 @@
     const FRI_3_4 = ['Seth']
     const FRI_4_5 = ['CLOSED']
     const FRI_5_6 = ['CLOSED']
-*/
 </script>
 
 <svelte:head>
