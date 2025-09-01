@@ -579,7 +579,7 @@
     const MON_4_5 = ['Andrew', 'Mattie', 'Seth (-4:30)', 'Katherine (4:30-)']
     const MON_5_6 = ['Andrew', 'Katherine', 'Mattie']
 
-    const TUE_9_10 = ['Mary', 'Bailey (9:30-)']
+    const TUE_9_10 = [mary, bailey]
     const TUE_10_11 = ['Bailey', 'Seth (10:30-)', 'Mary (-10:30)']
     const TUE_11_12 = ['Andrew', 'Bailey', 'Seth']
     const TUE_12_1 = ['Andrew', 'Bailey (-12:30)', 'Seth (-12:30)', 'Alyssa (12:30-)', 'Néstor (12:30-)']
@@ -798,7 +798,7 @@
                         <!-- TUE -->
                         <TableBodyCell>
                             <Listgroup items={TUE_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                {item}
+                                <span style="color:{item.t_color}">{item.t_name}</span>
                             </Listgroup>
                         </TableBodyCell>
 
