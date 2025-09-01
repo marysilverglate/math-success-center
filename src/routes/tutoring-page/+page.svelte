@@ -1305,9 +1305,7 @@
                         <!-- FRI -->
                         <TableBodyCell>
                             <Listgroup items={FRI_4_5} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.tutor.t_color}">
-                                    {item.tutor.t_name} {item.note}
-                                  </span>
+                                {item}
                             </Listgroup>
                         </TableBodyCell>
                     </TableBodyRow>
@@ -1349,9 +1347,7 @@
                         <!-- FRI -->
                         <TableBodyCell>
                             <Listgroup items={FRI_5_6} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.tutor.t_color}">
-                                    {item.tutor.t_name} {item.note}
-                                  </span>
+                                {item}
                             </Listgroup>
                         </TableBodyCell>
                     </TableBodyRow>
@@ -1913,14 +1909,18 @@
                             <TableBodyRow>
                                 <TableBodyCell>4:00 - 5:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    Closed
+                                    <Listgroup items={FRI_5_6} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                        {item}
+                                    </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
 
                             <TableBodyRow>
                                 <TableBodyCell>5:00 - 6:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    Closed
+                                    <Listgroup items={FRI_5_6} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                        {item}
+                                    </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
 
