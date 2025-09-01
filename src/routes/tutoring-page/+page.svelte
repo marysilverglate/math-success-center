@@ -572,7 +572,12 @@
     const MON_9_10 = [bailey, mattie]
     const MON_10_11 = ['Bailey', 'Mattie']
     const MON_11_12 = ['Alyssa', 'Bailey', 'Seth']
-    const MON_12_1 = ['Alyssa', 'Néstor', 'Bailey (-12:30)', 'Mary (12:30-)']
+    const MON_12_1 = [
+                        { tutor: alyssa },
+                        { tutor: nestor },
+                        { tutor: bailey, note: "(-12:30)" },
+                        { tutor: mary, note: "(12:30-)" }
+                    ];
     const MON_1_2 = ['Mary', 'Mattie', 'Néstor']
     const MON_2_3 = ['Mary', 'Mattie', 'Néstor']
     const MON_3_4 = ['Mattie', 'Seth']
@@ -805,21 +810,21 @@
                         <!-- WED -->
                         <TableBodyCell>
                             <Listgroup items={WED_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                {item}
+                                <span style="color:{item.t_color}">{item.t_name}</span>
                             </Listgroup>
                         </TableBodyCell>
 
                         <!-- THU -->
                         <TableBodyCell>
                             <Listgroup items={THUR_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                {item}
+                                <span style="color:{item.t_color}">{item.t_name}</span>
                             </Listgroup>
                         </TableBodyCell>
 
                         <!-- FRIDAY -->
                         <TableBodyCell>
                             <Listgroup items={FRI_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                {item}
+                                <span style="color:{item.t_color}">{item.t_name}</span>
                             </Listgroup>
                         </TableBodyCell>
 
@@ -898,7 +903,9 @@
                         <!-- MON -->
                         <TableBodyCell>
                             <Listgroup items={MON_12_1} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                {item}
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- TUE -->
