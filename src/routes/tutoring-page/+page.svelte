@@ -571,14 +571,14 @@
     //For full tutor schedule. Holds which tutors work at each time slot
                             
     const MON_9_10 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 9 && slot[1] === 10));
-    const MON_10_11 = ['Bailey', 'Mattie']
-    const MON_11_12 = ['Alyssa', 'Bailey', 'Seth']
-    const MON_12_1 = ['Alyssa', 'Néstor', 'Bailey (-12:30)', 'Mary (12:30-)']
-    const MON_1_2 = ['Mary', 'Mattie', 'Néstor']
-    const MON_2_3 = ['Mary', 'Mattie', 'Néstor']
-    const MON_3_4 = ['Mattie', 'Seth']
-    const MON_4_5 = ['Andrew', 'Mattie', 'Seth (-4:30)', 'Katherine (4:30-)']
-    const MON_5_6 = ['Andrew', 'Katherine', 'Mattie']
+    const MON_10_11 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 10 && slot[1] === 11));
+    const MON_11_12 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 11 && slot[1] === 12));
+    const MON_12_1 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 12 && slot[1] === 13));
+    const MON_1_2 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 13 && slot[1] === 14));
+    const MON_2_3 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 14 && slot[1] === 15));
+    const MON_3_4 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 15 && slot[1] === 16));
+    const MON_4_5 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 16 && slot[1] === 17));
+    const MON_5_6 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 17 && slot[1] === 18));
 
     const TUE_9_10 = ['Mary', 'Bailey (9:30-)']
     const TUE_10_11 = ['Bailey', 'Seth (10:30-)', 'Mary (-10:30)']
