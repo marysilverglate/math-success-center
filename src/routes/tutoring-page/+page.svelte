@@ -569,36 +569,15 @@
         
 
     //For full tutor schedule. Holds which tutors work at each time slot
-    const days = ["MON", "TUE", "WED", "THUR", "FRI"];
-    const timeSlots = [
-                        [9,10], [10,11], [11,12],
-                        [12,13], [13,14], [14,15],
-                        [15,16], [16,17], [17,18]
-                        ];
-    
-    const schedule = {};
-
-    days.forEach((day, dayIndex) => {
-    schedule[day] = {};
-    timeSlots.forEach(([start, end]) => {
-    schedule[day][`${start}_${end}`] = tutorList
-      .filter(tutor => {
-        const hours = tutor.t_hours?.[dayIndex];
-        return Array.isArray(hours) && hours.some(([s, e]) => s < end && e > start);
-      })
-      .map(tutor => tutor.t_name);
-    });
-    });
-
-/*   const MON_9_10 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 9 && slot[1] === 10));
-    const MON_10_11 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 10 && slot[1] === 11));
-    const MON_11_12 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 11 && slot[1] === 12));
-    const MON_12_1 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 12 && slot[1] === 13));
-    const MON_1_2 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 13 && slot[1] === 14));
-    const MON_2_3 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 14 && slot[1] === 15));
-    const MON_3_4 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 15 && slot[1] === 16));
-    const MON_4_5 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 16 && slot[1] === 17));
-    const MON_5_6 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 17 && slot[1] === 18));
+    const MON_9_10 = ['Bailey', 'Mattie']
+    const MON_10_11 = ['Bailey', 'Mattie']
+    const MON_11_12 = ['Alyssa', 'Bailey', 'Seth']
+    const MON_12_1 = ['Alyssa', 'Néstor', 'Bailey (-12:30)', 'Mary (12:30-)']
+    const MON_1_2 = ['Mary', 'Mattie', 'Néstor']
+    const MON_2_3 = ['Mary', 'Mattie', 'Néstor']
+    const MON_3_4 = ['Mattie', 'Seth']
+    const MON_4_5 = ['Andrew', 'Mattie', 'Seth (-4:30)', 'Katherine (4:30-)']
+    const MON_5_6 = ['Andrew', 'Katherine', 'Mattie']
 
     const TUE_9_10 = ['Mary', 'Bailey (9:30-)']
     const TUE_10_11 = ['Bailey', 'Seth (10:30-)', 'Mary (-10:30)']
@@ -811,7 +790,7 @@
                         <TableBodyCell>9:00 - 10:00 A.M.</TableBodyCell>
                         <!-- MON -->
                         <TableBodyCell>
-                            <Listgroup items={schedule["MON"]["9_10"]} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={MON_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 <span style="color: {item.t_color}; font-weight: bold;">
                                     {item.t_name}
                                   </span>
@@ -820,37 +799,29 @@
 
                         <!-- TUE -->
                         <TableBodyCell>
-                            <Listgroup items={schedule["TUE"]["9_10"]} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color: {item.t_color}; font-weight: bold;">
-                                    {item.t_name}
-                                  </span>
+                            <Listgroup items={TUE_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                {item}
                             </Listgroup>
                         </TableBodyCell>
 
                         <!-- WED -->
                         <TableBodyCell>
-                            <Listgroup items={schedule["WED"]["9_10"]} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color: {item.t_color}; font-weight: bold;">
-                                    {item.t_name}
-                                  </span>
+                            <Listgroup items={WED_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                {item}
                             </Listgroup>
                         </TableBodyCell>
 
                         <!-- THU -->
                         <TableBodyCell>
-                            <Listgroup items={schedule["THUR"]["9_10"]} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color: {item.t_color}; font-weight: bold;">
-                                    {item.t_name}
-                                  </span>
+                            <Listgroup items={THUR_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                {item}
                             </Listgroup>
                         </TableBodyCell>
 
                         <!-- FRIDAY -->
                         <TableBodyCell>
-                            <Listgroup items={schedule["FRI"]["9_10"]} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color: {item.t_color}; font-weight: bold;">
-                                    {item.t_name}
-                                  </span>
+                            <Listgroup items={FRI_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                {item}
                             </Listgroup>
                         </TableBodyCell>
 
