@@ -960,35 +960,45 @@
                         <!-- MON -->
                         <TableBodyCell>
                             <Listgroup items={MON_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
 
                         <!-- TUE -->
                         <TableBodyCell>
                             <Listgroup items={TUE_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
 
                         <!-- WED -->
                         <TableBodyCell>
                             <Listgroup items={WED_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
 
                         <!-- THU -->
                         <TableBodyCell>
                             <Listgroup items={THUR_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
 
                         <!-- FRIDAY -->
                         <TableBodyCell>
                             <Listgroup items={FRI_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
 
@@ -999,31 +1009,41 @@
                         <!-- MON -->
                         <TableBodyCell>
                             <Listgroup items={MON_10_11} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- TUE -->
                         <TableBodyCell>
                             <Listgroup items={TUE_10_11} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- WED -->
                         <TableBodyCell>
                             <Listgroup items={WED_10_11} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- THU -->
                         <TableBodyCell>
                             <Listgroup items={THUR_10_11} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- FRI -->
                         <TableBodyCell>
                             <Listgroup items={FRI_10_11} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                     </TableBodyRow>
@@ -1033,31 +1053,41 @@
                         <!-- MON -->
                         <TableBodyCell>
                             <Listgroup items={MON_11_12} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- TUE -->
                         <TableBodyCell>
                             <Listgroup items={TUE_11_12} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- WED -->
                         <TableBodyCell>
                             <Listgroup items={WED_11_12} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- THU -->
                         <TableBodyCell>
                             <Listgroup items={THUR_11_12} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- FRI -->
                         <TableBodyCell>
                             <Listgroup items={FRI_11_12} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                     </TableBodyRow>
@@ -1075,25 +1105,33 @@
                         <!-- TUE -->
                         <TableBodyCell>
                             <Listgroup items={TUE_12_1} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- WED -->
                         <TableBodyCell>
                             <Listgroup items={WED_12_1} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- THU -->
                         <TableBodyCell>
                             <Listgroup items={THUR_12_1} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- FRI -->
                         <TableBodyCell>
                             <Listgroup items={FRI_12_1} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                     </TableBodyRow>
@@ -1103,31 +1141,41 @@
                         <!-- MON -->
                         <TableBodyCell>
                             <Listgroup items={MON_1_2} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- TUE -->
                         <TableBodyCell>
                             <Listgroup items={TUE_1_2} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- WED -->
                         <TableBodyCell>
                             <Listgroup items={WED_1_2} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- THU -->
                         <TableBodyCell>
                             <Listgroup items={THUR_1_2} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- FRI -->
                         <TableBodyCell>
                             <Listgroup items={FRI_1_2} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                     </TableBodyRow>
@@ -1137,31 +1185,41 @@
                         <!-- MON -->
                         <TableBodyCell>
                             <Listgroup items={MON_2_3} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- TUE -->
                         <TableBodyCell>
                             <Listgroup items={TUE_2_3} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- WED -->
                         <TableBodyCell>
                             <Listgroup items={WED_2_3} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- THU -->
                         <TableBodyCell>
                             <Listgroup items={THUR_2_3} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- FRI -->
                         <TableBodyCell>
                             <Listgroup items={FRI_2_3} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                     </TableBodyRow>
@@ -1171,31 +1229,41 @@
                         <!-- MON -->
                         <TableBodyCell>
                             <Listgroup items={MON_3_4} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- TUE -->
                         <TableBodyCell>
                             <Listgroup items={TUE_3_4} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- WED -->
                         <TableBodyCell>
                             <Listgroup items={WED_3_4} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- THU -->
                         <TableBodyCell>
                             <Listgroup items={THUR_3_4} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- FRI -->
                         <TableBodyCell>
                             <Listgroup items={FRI_3_4} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                     </TableBodyRow>
@@ -1205,31 +1273,41 @@
                         <!-- MON -->
                         <TableBodyCell>
                             <Listgroup items={MON_4_5} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- TUE -->
                         <TableBodyCell>
                             <Listgroup items={TUE_4_5} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- WED -->
                         <TableBodyCell>
                             <Listgroup items={WED_4_5} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- THU -->
                         <TableBodyCell>
                             <Listgroup items={THUR_4_5} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- FRI -->
                         <TableBodyCell>
                             <Listgroup items={FRI_4_5} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                     </TableBodyRow>
@@ -1239,31 +1317,41 @@
                         <!-- MON -->
                         <TableBodyCell>
                             <Listgroup items={MON_5_6} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- TUE -->
                         <TableBodyCell>
                             <Listgroup items={TUE_5_6} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- WED -->
                         <TableBodyCell>
                             <Listgroup items={WED_5_6} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- THU -->
                         <TableBodyCell>
                             <Listgroup items={THUR_5_6} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                         <!-- FRI -->
                         <TableBodyCell>
                             <Listgroup items={FRI_5_6} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.t_color}">{item.t_name}</span>
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
                     </TableBodyRow>
@@ -1291,7 +1379,9 @@
             
                                 <TableBodyCell>
                                     <Listgroup items={MON_9_10} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1301,7 +1391,9 @@
             
                                 <TableBodyCell>
                                     <Listgroup items={MON_10_11} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1310,7 +1402,9 @@
                                 <TableBodyCell>11:00 - 12:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={MON_11_12} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1319,7 +1413,9 @@
                                 <TableBodyCell>12:00 - 1:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={MON_12_1} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1328,7 +1424,9 @@
                                 <TableBodyCell>1:00 - 2:00 P.M.</TableBodyCell>
                                     <TableBodyCell>
                                         <Listgroup items={MON_1_2} let:item class="w-25 text-center shadow-md black-color">
-                                            <span style="color:{item.t_color}">{item.t_name}</span>
+                                            <span style="color:{item.tutor.t_color}">
+                                                {item.tutor.t_name} {item.note}
+                                              </span>
                                         </Listgroup>
                                     </TableBodyCell>
                             </TableBodyRow>
@@ -1337,7 +1435,9 @@
                                 <TableBodyCell>2:00 - 3:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={MON_2_3} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1346,7 +1446,9 @@
                                 <TableBodyCell>3:00 - 4:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={MON_3_4} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1355,7 +1457,9 @@
                                 <TableBodyCell>4:00 - 5:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={MON_4_5} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1364,7 +1468,9 @@
                                 <TableBodyCell>5:00 - 6:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={MON_5_6} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1384,7 +1490,9 @@
             
                                 <TableBodyCell>
                                     <Listgroup items={TUE_9_10} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                     
@@ -1395,7 +1503,9 @@
             
                                 <TableBodyCell>
                                     <Listgroup items={TUE_10_11} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                     
@@ -1405,7 +1515,9 @@
                                 <TableBodyCell>11:00 - 12:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={TUE_11_12} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1414,7 +1526,9 @@
                                 <TableBodyCell>12:00 - 1:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={TUE_12_1} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1423,7 +1537,9 @@
                                 <TableBodyCell>1:00 - 2:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={TUE_1_2} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1432,7 +1548,9 @@
                                 <TableBodyCell>2:00 - 3:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={TUE_2_3} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1441,7 +1559,9 @@
                                 <TableBodyCell>3:00 - 4:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={TUE_3_4} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1450,7 +1570,9 @@
                                 <TableBodyCell>4:00 - 5:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={TUE_4_5} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1459,7 +1581,9 @@
                                 <TableBodyCell>5:00 - 6:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={TUE_5_6} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1480,7 +1604,9 @@
             
                                 <TableBodyCell>
                                     <Listgroup items={WED_9_10} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1490,7 +1616,9 @@
             
                                 <TableBodyCell>
                                     <Listgroup items={WED_10_11} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1499,7 +1627,9 @@
                                 <TableBodyCell>11:00 - 12:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={WED_11_12} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1508,7 +1638,9 @@
                                 <TableBodyCell>12:00 - 1:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={WED_12_1} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1517,7 +1649,9 @@
                                 <TableBodyCell>1:00 - 2:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={WED_1_2} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1526,7 +1660,9 @@
                                 <TableBodyCell>2:00 - 3:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={WED_2_3} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1535,7 +1671,9 @@
                                 <TableBodyCell>3:00 - 4:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={WED_3_4} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1544,7 +1682,9 @@
                                 <TableBodyCell>4:00 - 5:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={WED_4_5} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1553,7 +1693,9 @@
                                 <TableBodyCell>5:00 - 6:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={WED_5_6} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1575,7 +1717,9 @@
             
                                 <TableBodyCell>
                                     <Listgroup items={THUR_9_10} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
 
@@ -1586,7 +1730,9 @@
             
                                 <TableBodyCell>
                                     <Listgroup items={THUR_10_11} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
 
@@ -1597,7 +1743,9 @@
                                 <TableBodyCell>11:00 - 12:00 P.M.</TableBodyCell>
                                     <TableBodyCell>
                                     <Listgroup items={THUR_11_12} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1606,7 +1754,9 @@
                                 <TableBodyCell>12:00 - 1:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={THUR_12_1} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1615,7 +1765,9 @@
                                 <TableBodyCell>1:00 - 2:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={THUR_1_2} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1624,7 +1776,9 @@
                                 <TableBodyCell>2:00 - 3:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={THUR_2_3} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1633,7 +1787,9 @@
                                 <TableBodyCell>3:00 - 4:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={THUR_3_4} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1642,7 +1798,9 @@
                                 <TableBodyCell>4:00 - 5:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={THUR_4_5} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1651,7 +1809,9 @@
                                 <TableBodyCell>5:00 - 6:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={THUR_5_6} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1673,7 +1833,9 @@
             
                                 <TableBodyCell>
                                     <Listgroup items={FRI_9_10} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
 
@@ -1684,7 +1846,9 @@
             
                                 <TableBodyCell>
                                     <Listgroup items={FRI_10_11} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
 
@@ -1695,7 +1859,9 @@
                                 <TableBodyCell>11:00 - 12:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={FRI_11_12} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1704,7 +1870,9 @@
                                 <TableBodyCell>12:00 - 1:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={FRI_12_1} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1713,7 +1881,9 @@
                                 <TableBodyCell>1:00 - 2:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={FRI_1_2} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1722,7 +1892,9 @@
                                 <TableBodyCell>2:00 - 3:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={FRI_2_3} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1731,7 +1903,9 @@
                                 <TableBodyCell>3:00 - 4:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={FRI_3_4} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
@@ -1739,18 +1913,14 @@
                             <TableBodyRow>
                                 <TableBodyCell>4:00 - 5:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={FRI_4_5} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
-                                    </Listgroup>
+                                    Closed
                                 </TableBodyCell>
                             </TableBodyRow>
 
                             <TableBodyRow>
                                 <TableBodyCell>5:00 - 6:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
-                                    <Listgroup items={FRI_5_6} let:item class="w-25 text-center shadow-md black-color">
-                                        <span style="color:{item.t_color}">{item.t_name}</span>
-                                    </Listgroup>
+                                    Closed
                                 </TableBodyCell>
                             </TableBodyRow>
 
