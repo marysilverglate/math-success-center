@@ -591,7 +591,7 @@
     const TUE_5_6 = ['Bailey', 'Katherine', 'Mattie']
 
     const WED_9_10 = ['Andrew', 'Mattie']
-    const WED_10_11 = ['Bailey', 'Mattie' 'Seth']
+    const WED_10_11 = ['Bailey', 'Mattie', 'Seth']
     const WED_11_12 = ['Alyssa', 'Bailey', 'Seth']
     const WED_12_1 = ['Alyssa', 'Néstor', 'Bailey (-12:30)', 'Mary (12:30-)']
     const WED_1_2 = ['Mary', 'Néstor', 'Seth']
