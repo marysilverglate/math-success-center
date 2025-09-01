@@ -569,7 +569,7 @@
         
 
     //For full tutor schedule. Holds which tutors work at each time slot
-    const MON_9_10 = ['Bailey', 'Mattie']
+    const MON_9_10 = [bailey, mattie]
     const MON_10_11 = ['Bailey', 'Mattie']
     const MON_11_12 = ['Alyssa', 'Bailey', 'Seth']
     const MON_12_1 = ['Alyssa', 'Néstor', 'Bailey (-12:30)', 'Mary (12:30-)']
@@ -619,6 +619,8 @@
     const FRI_3_4 = ['Seth']
     const FRI_4_5 = ['CLOSED']
     const FRI_5_6 = ['CLOSED']
+
+};
 </script>
 
 <svelte:head>
@@ -790,9 +792,7 @@
                         <!-- MON -->
                         <TableBodyCell>
                             <Listgroup items={MON_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color: {item.t_color}; font-weight: bold;">
-                                    {item.t_name}
-                                  </span>
+                                <span style="color:{item.t_color}">{item.t_name}</span>
                             </Listgroup>
                         </TableBodyCell>
 
