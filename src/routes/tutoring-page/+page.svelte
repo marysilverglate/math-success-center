@@ -569,8 +569,25 @@
         
 
     //For full tutor schedule. Holds which tutors work at each time slot
-                            
-    const MON_9_10 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 9 && slot[1] === 10));
+    const days = ["MON", "TUE", "WED", "THUR", "FRI"];
+    const timeSlots = [
+                        [9,10], [10,11], [11,12],
+                        [12,13], [13,14], [14,15],
+                        [15,16], [16,17], [17,18]
+                        ];
+    
+    const schedule = {};
+
+    days.forEach((day, dayIndex) => {
+    schedule[day] = {};
+    timeSlots.forEach(([start, end]) => {
+    schedule[day][`${start}_${end}`] = tutorList.filter(
+      tutor => tutor.t_hours[dayIndex]?.some(([s, e]) => s < end && e > start)
+    ).map(tutor => tutor.t_name);
+    });
+    });
+
+/*   const MON_9_10 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 9 && slot[1] === 10));
     const MON_10_11 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 10 && slot[1] === 11));
     const MON_11_12 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 11 && slot[1] === 12));
     const MON_12_1 = tutorList.filter(tutor => tutor.t_hours[0]?.some(slot => slot[0] === 12 && slot[1] === 13));
@@ -620,6 +637,7 @@
     const FRI_3_4 = ['Seth']
     const FRI_4_5 = ['CLOSED']
     const FRI_5_6 = ['CLOSED']
+*/
 </script>
 
 <svelte:head>
@@ -790,7 +808,7 @@
                         <TableBodyCell>9:00 - 10:00 A.M.</TableBodyCell>
                         <!-- MON -->
                         <TableBodyCell>
-                            <Listgroup items={MON_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                            <Listgroup items={schedule["MON"]["9_10"]} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                 <span style="color: {item.t_color}; font-weight: bold;">
                                     {item.t_name}
                                   </span>
@@ -799,29 +817,37 @@
 
                         <!-- TUE -->
                         <TableBodyCell>
-                            <Listgroup items={TUE_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                {item}
+                            <Listgroup items={schedule["TUE"]["9_10"]} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                <span style="color: {item.t_color}; font-weight: bold;">
+                                    {item.t_name}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
 
                         <!-- WED -->
                         <TableBodyCell>
-                            <Listgroup items={WED_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                {item}
+                            <Listgroup items={schedule["WED"]["9_10"]} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                <span style="color: {item.t_color}; font-weight: bold;">
+                                    {item.t_name}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
 
                         <!-- THU -->
                         <TableBodyCell>
-                            <Listgroup items={THUR_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                {item}
+                            <Listgroup items={schedule["THUR"]["9_10"]} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                <span style="color: {item.t_color}; font-weight: bold;">
+                                    {item.t_name}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
 
                         <!-- FRIDAY -->
                         <TableBodyCell>
-                            <Listgroup items={FRI_9_10} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                {item}
+                            <Listgroup items={schedule["FRI"]["9_10"]} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                <span style="color: {item.t_color}; font-weight: bold;">
+                                    {item.t_name}
+                                  </span>
                             </Listgroup>
                         </TableBodyCell>
 
