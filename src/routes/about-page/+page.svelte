@@ -228,7 +228,7 @@
         <!-- Melissa -->
         <CardComp
             name="Melissa" 
-            imgUrl="./about-page-img/Alyssa.jpg" 
+            imgUrl="./about-page-img/Melissa.jpg" 
             imgAlt="Image of the tutor, Melissa">
             <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Physics', 'Computer Science']}>
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
@@ -253,7 +253,7 @@
         <!-- Nathaniel -->
         <CardComp
             name="Nathaniel" 
-            imgUrl="./about-page-img/Nathaniel.HEIC" 
+            imgUrl="./about-page-img/Nathaniel.jpeg" 
             imgAlt="Image of the tutor, Nathaniel">
             <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Physics', 'Computer Science']}>
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
