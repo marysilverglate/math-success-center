@@ -426,7 +426,7 @@
                           ], 
                     /*F*/ 
                           [
-                            [9, 10] [10,11], [11,12], [12, 13], [13, 13.5]
+                            [9, 10], [10,11], [11,12], [12, 13], [13, 13.5]
                           ] 
                    ]
     };
@@ -620,9 +620,9 @@
                         {tutor: mary}
                     ];
     const MON_12_1 = [
-                        { tutor: mattie },
-                        { tutor: jamie, note: "(12:30-" },
-                        { tutor: mary}
+                        {tutor: mattie},
+                        {tutor: jamie, note: "(12:30-)" },
+                        {tutor: mary}
                     ];
     const MON_1_2 = [
                         {tutor: bailey},
@@ -640,9 +640,9 @@
                         {tutor: maxwell}
                     ];
     const MON_4_5 = [
-                        { tutor: andrew },
-                        { tutor: nate },
-                        { tutor: maxwell}
+                        {tutor: andrew},
+                        {tutor: nate},
+                        {tutor: maxwell}
                     ];
     const MON_5_6 = [
                         {tutor: andrew},
@@ -666,9 +666,9 @@
                         {tutor: bailey}
                     ];
     const TUE_10_11 = [
-                        { tutor: andrew},
-                        { tutor: bailey},
-                        { tutor: mattie}
+                        {tutor: andrew},
+                        {tutor: bailey},
+                        {tutor: mattie}
                     ];
     const TUE_11_12 = [
                         {tutor: andrew},
@@ -732,9 +732,9 @@
                         {tutor: mary}
                     ];
     const WED_12_1 = [
-                        { tutor: andrew },
-                        { tutor: mattie },
-                        { tutor: jamie, note: "(12:30-)" }
+                        {tutor: andrew },
+                        {tutor: mattie },
+                        {tutor: jamie, note: "(12:30-)" }
                     ];
     const WED_1_2 = [
                         {tutor: maxwell, note: "(1:30-)"},
@@ -1465,9 +1465,7 @@
                         <!-- FRI -->
                         <TableBodyCell>
                             <Listgroup items={FRI_6_7} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.tutor.t_color}">
-                                    {item.tutor.t_name} {item.note}
-                                  </span>
+                                {item}
                             </Listgroup>
                         </TableBodyCell>
                     </TableBodyRow>
@@ -1509,9 +1507,7 @@
                         <!-- FRI -->
                         <TableBodyCell>
                             <Listgroup items={FRI_7_8} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
-                                <span style="color:{item.tutor.t_color}">
-                                    {item.tutor.t_name} {item.note}
-                                  </span>
+                                {item}
                             </Listgroup>
                         </TableBodyCell>
                     </TableBodyRow>
