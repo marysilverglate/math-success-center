@@ -662,7 +662,7 @@
 
     // TUESDAY
     const TUE_9_10 = [
-                        {tutor: andrew, note: "(9:30-"},
+                        {tutor: andrew, note: "(9:30-)"},
                         {tutor: bailey}
                     ];
     const TUE_10_11 = [
@@ -799,7 +799,7 @@
                     ];
     const THUR_2_3 = [
                         {tutor: melissa},
-                        {tutor: maxwell, note: "(2:15-"},
+                        {tutor: maxwell, note: "(2:15-)"},
                         {tutor: mary, note: "(-2:30)"}
                     ]
     const THUR_3_4 = [
