@@ -703,7 +703,7 @@
                     ];
     const TUE_5_6 = [
                         {tutor: bailey},
-                        {tutor: meslissa},
+                        {tutor: melissa},
                         {tutor: seth}
                     ];
     const TUE_6_7 = [
