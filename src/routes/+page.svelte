@@ -36,7 +36,7 @@
     <div class="bg-gray-100 rounded-3xl sm:my-20 mx-auto my-10 p-5 w-5/6 md:p-10 lg:w-2/3 lg:p-16 md:col-span-1 lg:col-span-3 shadow-lg shadow-[var(--lu-gold)] h-fit ">
         <h1 class="text-center font-bold text-2xl md:text-4xl">Welcome to the Math Success Center!</h1>
         <p class="my-5 leading-10 indent-10 text-justify md:w-full black-color"> 
-            We are a free tutoring service provided by Lindenwood University. Students seeking assistance in mathematics, physics, and computer science are encouraged to take advantage of this opportunity. Previously located in Young Hall, the Math Success Center moved to the Library and Academic Resources Center (LARC), Room 121, in August 2023 under the leadership of its new director, Mary Silverglate.
+            We are a free tutoring service provided by Lindenwood University. Students seeking assistance in mathematics, physics, and computer science are encouraged to take advantage of this opportunity. The Math Success Center is located in the Library and Academic Resources Center (LARC), Room 121, and is under the leadership of its new director, Mary Silverglate. As of January 2026, Lindenwood's Math Success Center has earned the Level One certification by the College Reading and Learning Association (CRLA) through its International Tutor Training Program Certification (ITTPC). The certification recognizes the Center’s program for meeting CRLA’s national standards. These standards cover tutor selection, training, direct service, and evaluation.
         </p>
     </div>
 
@@ -78,8 +78,8 @@
                                 
                                 <!-- Lg display only -->
                                 <TableBodyCell >
-                                    <p class="block lg:hidden"> 9 A.M. - 6 P.M.</p>
-                                    <p class="hidden lg:block">9 A.M. <br> - <br> 6 P.M.</p>
+                                    <p class="block lg:hidden"> 9 A.M. - 8 P.M.</p>
+                                    <p class="hidden lg:block">9 A.M. <br> - <br> 8 P.M.</p>
                                 </TableBodyCell>
 
                             </TableBodyRow>
