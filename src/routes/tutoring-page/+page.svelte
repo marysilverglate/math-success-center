@@ -46,10 +46,10 @@
 
         // Base case: not within operating hours  
         else if ( currDay >=1 && currDay <= 4){ //M-R
-            if (currTime < 9 || currTime > 18){ 
+            if (currTime < 9 || currTime > 20){ 
                 // e.target.checked=false; //uncheck
                 findTutorAfterHours();
-                printResult("The Math Success Center operates from 9 AM to 6 PM, Monday through Thursday. Below are the tutor(s) available for the selected subject. Please refer to the tutor-specific schedule for their availability.");
+                printResult("The Math Success Center operates from 9 AM to 8 PM, Monday through Thursday. Below are the tutor(s) available for the selected subject. Please refer to the tutor-specific schedule for their availability.");
                 return;
             }
         } else if (currTime < 9 || currTime > 16){ //F
@@ -280,25 +280,25 @@
         // Tutor name
         t_name : "Andrew", 
         // Tutor color
-        t_color : 'black',
+        t_color : 'red',
         // Tutor subject(s)
-        t_subject : ["Calculus 1", "Calculus 2", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
+        t_subject : ["Computer Science", "Calculus 1", "Calculus 2", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
         // Tutor hours
         t_hours :  [
                     /*M*/ [
-                            [16, 17], [17, 18]
+                            [14,15], [15,16], [16,17], [17,18]
                           ],
 
                     /*T*/ [
-                            [11, 12] , [12, 13], [13, 14] , [14, 15]
+                            [9.5, 10] , [10, 11], [11, 12] , [12, 13]
                           ],
 
                     /*W*/ [
-                            [9,10], [14, 15], [15, 16], [16, 17]
+                            [9,10], [11.5, 12], [12, 13], [13, 14], [14,14.5]
                           ],
 
                     /*R*/ [
-                            [11, 12] , [12, 13], [13, 14] , [14, 15]
+                            [9.5, 10] , [10, 11], [11, 12] , [12, 13]
                           ],
 
                     /*F*/ [
@@ -317,19 +317,19 @@
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [9, 10], [10, 11], [11,12], [12,12.5]
+                            [13, 14], [18, 19], [19,20]
                           ],
                     /*T*/ 
                           [
-                            [9.5,10], [10,11], [11,12], [12,12.5] [15, 16], [16,17], [17,18]
+                            [9,10], [10,11], [12, 13], [13,14], [14,15], [15,16], [17,18], [18,19], [19,20]
                           ],
                     /*W*/ 
                           [
-                            [10, 11], [11,12], [12,12.5]
+                            
                           ],
                     /*R*/ 
                           [
-                            [9.5,10], [10,11], [11,12], [12,12.5]
+                            [12, 13], [13,14]
                           ], 
                     /*F*/ 
                           [
@@ -348,19 +348,19 @@
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [9,10], [10,11] , [13,14] , [14,15] , [15,16] , [16,17] , [17,18]
+                            [10,11], [12, 13], [19, 20]
                           ],
                     /*T*/ 
                           [
-                            [16,17], [17, 18]
+                            [10,11], [11, 12], [19,20]
                           ],
                     /*W*/ 
                           [
-                            [9,10], [10,11], [15,16], [16,17], [17, 18]
+                            [10,11], [12, 13], [17, 18], [18, 19], [19, 20]
                           ],
                     /*R*/ 
                           [
-                            
+                            [10,11], [11, 12], [19,20]
                           ], 
                     /*F*/ 
                           [
@@ -379,23 +379,23 @@
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [12,13], [13,14], [14,15]
+                            [11, 12]
                           ],
                     /*T*/ 
                           [
-                            [12.5,13], [13,14]
+                            [13, 14], [14, 15], [15, 16], [16, 17]
                           ],
                     /*W*/ 
                           [
-                            [12,13], [13,14], [17,18]
+                            [16, 17], [17, 18], [18, 19], [19, 20]
                           ],
                     /*R*/ 
                           [
-                            [12.5,13], [13,14] , [14,15] , [15,16], [17,18]
+                            [9, 10], [10, 11], [17, 18], [18, 19], [19, 20]
                           ], 
                     /*F*/ 
                           [
-                            [14,15]
+                            [15, 16]
                           ] 
                    ]
     };
@@ -410,71 +410,11 @@
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [11, 12], [15,16], [16,16.5]
+                            [9, 10], [10, 11], [13, 14], [14, 15], [18, 19], [19, 20]
                           ],
                     /*T*/ 
                           [
-                            [10.5,11], [11,12], [12,12.5]
-                          ],
-                    /*W*/ 
-                          [
-                            [10,11], [11,12] , [13,14], [15,16] , [16,16.5]
-                          ],
-                    /*R*/ 
-                          [
-                            [10.5,11], [11,12] , [14.5,15], [15,16], [16,17]
-                          ], 
-                    /*F*/ 
-                          [
-                            [13,14], [15,16]
-                          ] 
-                   ]
-    };
-
-    const alyssa = {
-        // Tutor name
-        t_name : "Alyssa", 
-        // Tutor color
-        t_color : "purple",
-        // Tutor subject(s)
-        t_subject : ["Computer Science", "Calculus 2", "Calculus 1", "Physics", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
-        // Tutor hours
-        t_hours : [
-                    /*M*/ [ 
-                            [11,12] , [12,13]
-                          ],
-                    /*T*/ 
-                          [
-                            [12.5,13], [13,14], [14,15], [15,16]
-                          ],
-                    /*W*/ 
-                          [
-                            [11,12] , [12,13] , [14,15]
-                          ],
-                    /*R*/ 
-                          [
-                            [12,13], [13,14] , [14,14.5], [17,18]
-                          ], 
-                    /*F*/ 
-                          [
-                            [11,12] , [12,13], [14,15]
-                          ] 
-                   ]
-    };
-
-    const drJ = {
-        // Tutor name
-        t_name : "Dr. J (Jeevanjee)", 
-        // Tutor color
-        t_color : "red",
-        // Tutor subject(s)
-        t_subject : ["Computer Science", "Calculus 2", "Calculus 1", "Physics", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
-        // Tutor hours
-        t_hours : [
-                    /*M*/ [ 
-                          ],
-                    /*T*/ 
-                          [
+                            [16, 17], [17, 18]
                           ],
                     /*W*/ 
                           [
@@ -482,17 +422,79 @@
                           ],
                     /*R*/ 
                           [
+                            [15, 16], [16, 17], [17, 17.5]
                           ], 
                     /*F*/ 
                           [
-                            [9,10], [10,11]
+                            [9, 10], [10,11], [11,12], [12, 13], [13, 13.5]
                           ] 
                    ]
     };
 
-    const katherine = {
+    const nate = {
         // Tutor name
-        t_name : "Katherine", 
+        t_name : "Nate", 
+        // Tutor color
+        t_color : "black",
+        // Tutor subject(s)
+        t_subject : ["Calculus 2", "Calculus 1", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
+        // Tutor hours
+        t_hours : [
+                    /*M*/ [ 
+                            [9, 10] , [10,11], [11, 12], [15, 16], [16, 17], [17, 18]
+                          ],
+                    /*T*/ 
+                          [
+                            
+                          ],
+                    /*W*/ 
+                          [
+                            [9, 10] , [10,11], [11, 12], [16, 17], [17, 18]
+                          ],
+                    /*R*/ 
+                          [
+                            
+                          ], 
+                    /*F*/ 
+                          [
+                            [9, 10] , [10,11], [11, 12]
+                          ] 
+                   ]
+    };
+
+    const jamie = {
+        // Tutor name
+        t_name : "Jamie", 
+        // Tutor color
+        t_color : "black",
+        // Tutor subject(s)
+        t_subject : ["Calculus 2", "Calculus 1", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
+        // Tutor hours
+        t_hours : [
+                    /*M*/ [ 
+                            [12.5, 13], [13, 14], [14, 15], 
+                          ],
+                    /*T*/ 
+                          [
+                          ],
+                    /*W*/ 
+                          [
+                            [12.5, 13], [13, 14], [14, 15], [15, 16]
+                          ],
+                    /*R*/ 
+                          [
+                            [12, 13], [13, 14], [17.5, 18], [18, 19], [19, 20]
+                          ], 
+                    /*F*/ 
+                          [
+                            [12.5, 13], [13, 14], [14, 15], [15, 16]
+                          ] 
+                   ]
+    };
+
+    const maxwell = {
+        // Tutor name
+        t_name : "Maxwell", 
         // Tutor color
         t_color : "black",
         // Tutor subject(s)
@@ -500,23 +502,23 @@
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [16.5, 17], [17, 18]
+                            [15, 16], [16, 17], [17, 18]
                           ],
                     /*T*/ 
                           [
-                            [16, 17], [17, 18]
+                            
                           ],
                     /*W*/ 
                           [
-                            [16.5, 17], [17, 18]
+                            [13.5, 14], [14, 15], [15, 16], 
                           ],
                     /*R*/ 
                           [
-                            [16, 17], [17, 18]
+                            [14.5, 15], [15, 16], [16, 17], [17, 18], [18, 19]
                           ], 
                     /*F*/ 
                           [
-                            [9,10], [10,11] , [11,12] , [12,13], [13,14]
+                            [13, 14], [14, 15]
                           ] 
                    ]
     };
@@ -531,19 +533,50 @@
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [12.5,13], [13,14], [14,15]
+                            [11, 12], [12, 13]
                           ],
                     /*T*/ 
                           [
-                            [9,10], [10,10.5]
+                            [11, 12], [12, 13], [13, 14]
                           ],
                     /*W*/ 
                           [
-                            [12.5,13], [13,14], [14,15]
+                            [10, 11], [11, 12]
                           ],
                     /*R*/ 
                           [
-                            [9,10], [10,10.5]
+                            [13.5, 14], [14, 14.5]
+                          ], 
+                    /*F*/ 
+                          [
+
+                          ] 
+                   ]
+    };
+
+    const melissa = {
+        // Tutor name
+        t_name : "Melissa", 
+        // Tutor color
+        t_color : "black",
+        // Tutor subject(s)
+        t_subject : ["College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus", "Calculus 1", "Calculus 2"],
+        // Tutor hours
+        t_hours : [
+                    /*M*/ [ 
+                            
+                          ],
+                    /*T*/ 
+                          [
+                            [14, 15], [15, 16], [16, 17], [17,  18], [18, 19], [19, 20]
+                          ],
+                    /*W*/ 
+                          [
+                            [15, 16], [16, 17], [18, 19], [19, 20]
+                          ],
+                    /*R*/ 
+                          [
+                            [13, 14], [14, 15], [15, 16], [16, 17], 
                           ], 
                     /*F*/ 
                           [
@@ -559,12 +592,13 @@
                      nestor, 
                      bailey, 
                      mattie, 
-                     drJ, 
+                     jamie, 
                      andrew, 
-                     alyssa, 
+                     melissa, 
                      seth, 
-                     katherine,
-                     mary
+                     maxwell,
+                     mary,
+                     nate
     ];
         
 
@@ -572,222 +606,264 @@
 
     // MONDAY
     const MON_9_10 = [
-                        {tutor: bailey},
-                        {tutor: mattie}
+                        {tutor: seth},
+                        {tutor: nate}
                     ];
     const MON_10_11 = [
-                        {tutor: bailey},
-                        {tutor: mattie}
+                        {tutor: mattie},
+                        {tutor: nate},
+                        {tutor: seth}
                     ];
     const MON_11_12 = [
-                        {tutor: alyssa},
-                        {tutor: bailey},
-                        {tutor: seth}
+                        {tutor: nate},
+                        {tutor: nestor},
+                        {tutor: mary}
                     ];
     const MON_12_1 = [
-                        { tutor: alyssa },
-                        { tutor: nestor },
-                        { tutor: bailey, note: "(-12:30)" },
-                        { tutor: mary, note: "(12:30-)" }
+                        {tutor: mattie},
+                        {tutor: jamie, note: "(12:30-)" },
+                        {tutor: mary}
                     ];
     const MON_1_2 = [
-                        {tutor: mary},
-                        {tutor: mattie},
-                        {tutor: nestor}
-                    ];
-    const MON_2_3 = [
-                        {tutor: mary},
-                        {tutor: mattie},
-                        {tutor: nestor}
-                    ];
-    const MON_3_4 = [
-                        {tutor: mattie},
+                        {tutor: bailey},
+                        {tutor: jamie},
                         {tutor: seth}
                     ];
+    const MON_2_3 = [
+                        {tutor: andrew},
+                        {tutor: jamie},
+                        {tutor: seth}
+                    ];
+    const MON_3_4 = [
+                        {tutor: andrew},
+                        {tutor: nate},
+                        {tutor: maxwell}
+                    ];
     const MON_4_5 = [
-                        { tutor: andrew },
-                        { tutor: mattie },
-                        { tutor: seth, note: "(-4:30)" },
-                        { tutor: katherine, note: "(4:30-)" }
+                        {tutor: andrew},
+                        {tutor: nate},
+                        {tutor: maxwell}
                     ];
     const MON_5_6 = [
                         {tutor: andrew},
-                        {tutor: katherine},
-                        {tutor: mattie}
+                        {tutor: maxwell},
+                        {tutor: nate}
                     ];
-
-    // TUESDAY
-    const TUE_9_10 = [
-                        {tutor: mary},
-                        {tutor: bailey, note: "(9:30-)"}
-                    ];
-    const TUE_10_11 = [
-                        { tutor: bailey},
-                        { tutor: seth, note: "(10:30-)" },
-                        { tutor: mary, note: "(-10:30)" }
-                    ];
-    const TUE_11_12 = [
-                        {tutor: andrew},
+    const MON_6_7 = [
                         {tutor: bailey},
                         {tutor: seth}
                     ];
+    const MON_7_8 = [
+                        {tutor: bailey},
+                        {tutor: mattie},
+                        {tutor: seth}
+                    ];
+                    
+
+    // TUESDAY
+    const TUE_9_10 = [
+                        {tutor: andrew, note: "(9:30-"},
+                        {tutor: bailey}
+                    ];
+    const TUE_10_11 = [
+                        {tutor: andrew},
+                        {tutor: bailey},
+                        {tutor: mattie}
+                    ];
+    const TUE_11_12 = [
+                        {tutor: andrew},
+                        {tutor: mattie},
+                        {tutor: mary}
+                    ];
     const TUE_12_1 = [
                         {tutor: andrew}, 
-                        {tutor: bailey, note: "(-12:30)"},
-                        {tutor: seth, note:"(-12:30)"},
-                        {tutor: alyssa, note: "(12:30-)"},
-                        {tutor: nestor, note: "(12:30-)"}
+                        {tutor: mary},
+                        {tutor: bailey}
 
                     ];
     const TUE_1_2 = [
-                        {tutor: alyssa},
-                        {tutor: andrew},
-                        {tutor: nestor}
+                        {tutor: nestor},
+                        {tutor: bailey},
+                        {tutor: mary}
                     ];
     const TUE_2_3 = [
-                        {tutor: alyssa},
-                        {tutor: andrew},
+                        {tutor: bailey},
+                        {tutor: melissa},
+                        {tutor: nestor}
                     ];
     const TUE_3_4 = [
-                        {tutor: alyssa},
+                        {tutor: nestor},
                         {tutor: bailey},
+                        {tutor: melissa}
                     ];
     const TUE_4_5 = [
-                        {tutor: bailey},
-                        {tutor: katherine},
-                        {tutor: mattie}
+                        {tutor: nestor},
+                        {tutor: melissa},
+                        {tutor: seth}
                     ];
     const TUE_5_6 = [
                         {tutor: bailey},
-                        {tutor: katherine},
-                        {tutor: mattie}
+                        {tutor: melissa},
+                        {tutor: seth}
+                    ];
+    const TUE_6_7 = [
+                        {tutor: bailey},
+                        {tutor: melissa}
+                    ];
+    const TUE_7_8 = [
+                        {tutor: mattie},
+                        {tutor: bailey},
+                        {tutor: melissa}
                     ];
 
     // WEDNESDAY
     const WED_9_10 = [
                         {tutor: andrew},
-                        {tutor: mattie},
+                        {tutor: nate},
                     ];
     const WED_10_11 = [
-                        {tutor: bailey},
                         {tutor: mattie},
-                        {tutor: seth}
-                    ];
-    const WED_11_12 = [
-                        {tutor: alyssa},
-                        {tutor: bailey},
-                        {tutor: seth}
-                    ];
-    const WED_12_1 = [
-                        { tutor: alyssa },
-                        { tutor: nestor },
-                        { tutor: bailey, note: "(-12:30)" },
-                        { tutor: mary, note: "(12:30-)" }
-                    ];
-    const WED_1_2 = [
-                        {tutor: mary},
-                        {tutor: nestor},
-                        {tutor: seth}
-                    ];
-    const WED_2_3 = [
-                        {tutor: alyssa},
-                        {tutor: andrew},
+                        {tutor: nate},
                         {tutor: mary}
                     ];
+    const WED_11_12 = [
+                        {tutor: nate},
+                        {tutor: andrew, note: "(11:30-)"},
+                        {tutor: mary}
+                    ];
+    const WED_12_1 = [
+                        {tutor: andrew },
+                        {tutor: mattie },
+                        {tutor: jamie, note: "(12:30-)" }
+                    ];
+    const WED_1_2 = [
+                        {tutor: maxwell, note: "(1:30-)"},
+                        {tutor: jamie},
+                        {tutor: andrew}
+                    ];
+    const WED_2_3 = [
+                        {tutor: andrew, note: "(-2:30)"},
+                        {tutor: maxwell},
+                        {tutor: jamie}
+                    ];
     const WED_3_4 = [
-                        {tutor: andrew},
-                        {tutor: mattie},
-                        {tutor: seth}
+                        {tutor: maxwell},
+                        {tutor: jamie},
+                        {tutor: melissa}
                     ];
     const WED_4_5 = [
-                        {tutor: andrew},
-                        {tutor: mattie},
-                        {tutor: seth, note: "(-4:30)"},
-                        {tutor: katherine, note: "(4:30-)"}
+                        {tutor: melissa},
+                        {tutor: nestor},
+                        {tutor: nate}
                     ];
     const WED_5_6 = [
-                        {tutor: katherine},
+                        {tutor: nestor},
                         {tutor: mattie},
-                        {tutor: nestor}
+                        {tutor: nate}
+                    ];
+    const WED_6_7 = [
+                        {tutor: nestor},
+                        {tutor: mattie},
+                        {tutor: melissa}
+                    ];
+    const WED_7_8 = [
+                        {tutor: nestor},
+                        {tutor: mattie},
+                        {tutor: melissa}
                     ];
 
     // THURSDAY                
     const THUR_9_10 = [
-                        {tutor: mary},
-                        {tutor: bailey, note: "(9:30-)"}
+                        {tutor: andrew, note: "(9:30-)"},
+                        {tutor: nestor}
                     ];
     const THUR_10_11 = [
-                        { tutor: bailey},
-                        { tutor: seth, note: "(10:30-)" },
-                        { tutor: mary, note: "(-10:30)" }
+                        { tutor: andrew},
+                        { tutor: mattie},
+                        { tutor: nestor}
                     ];
     const THUR_11_12 = [
                         {tutor: andrew},
-                        {tutor: bailey},
-                        {tutor: seth}
+                        {tutor: mattie}
                     ];
     const THUR_12_1 = [
                         {tutor: andrew}, 
-                        {tutor: alyssa},
-                        {tutor: bailey, note: "(-12:30)"},
-                        {tutor: nestor, note: "(12:30-)"}
+                        {tutor: jamie},
+                        {tutor: bailey}
                     ];
     const THUR_1_2 = [
-                        {tutor: alyssa},
-                        {tutor: andrew},
-                        {tutor: nestor}
+                        {tutor: jamie},
+                        {tutor: bailey},
+                        {tutor: melissa},
+                        {tutor: mary, note: "(1:30-)"}
                     ];
     const THUR_2_3 = [
-                        {tutor: andrew},
-                        {tutor: nestor},
-                        {tutor: alyssa, note: "(-2:30)"},
-                        {tutor: seth, note: "(2:30-)"}
+                        {tutor: melissa},
+                        {tutor: maxwell, note: "(2:15-"},
+                        {tutor: mary, note: "(-2:30)"}
                     ]
     const THUR_3_4 = [
-                        {tutor: nestor},
-                        {tutor: seth}
+                        {tutor: melissa},
+                        {tutor: seth},
+                        {tutor: maxwell}
                     ]
     const THUR_4_5 = [
-                        {tutor: katherine},
-                        {tutor: seth}
+                        {tutor: melissa},
+                        {tutor: seth},
+                        {tutor: maxwell}
                     ]
     const THUR_5_6 = [
-                        {tutor: alyssa},
-                        {tutor: katherine},
-                        {tutor: nestor}
+                        {tutor: nestor},
+                        {tutor: maxwell},
+                        {tutor: jamie, note: "(5:30-)"}
                     ]
+    const THUR_6_7 = [
+                        {tutor: nestor},
+                        {tutor: jamie},
+                        {tutor: maxwell}
+                    ];
+    const THUR_7_8 = [
+                        {tutor: nestor},
+                        {tutor: jamie},
+                        {tutor: mattie}
+                    ];
 
     //FRIDAY
     const FRI_9_10 = [
-                        {tutor: drJ},
-                        {tutor: katherine}
+                        {tutor: nate},
+                        {tutor: seth}
                     ]
     const FRI_10_11 = [
-                        {tutor: drJ},
-                        {tutor: katherine},
+                        {tutor: nate},
+                        {tutor: seth},
                         {tutor: mattie}
                     ]
     const FRI_11_12 = [
-                        {tutor: alyssa},
-                        {tutor: katherine}
+                        {tutor: nate},
+                        {tutor: seth}
                     ]
     const FRI_12_1 = [
-                        {tutor: alyssa},
-                        {tutor: katherine}
+                        {tutor: jamie, note: "(12:30-)"},
+                        {tutor: seth}
                     ]
     const FRI_1_2 = [
-                        {tutor: katherine},
-                        {tutor: seth}
+                        {tutor: jamie},
+                        {tutor: maxwell},
+                        {tutor: seth, note: "(-1:30)"}
                     ]
     const FRI_2_3 = [
-                        {tutor: alyssa},
-                        {tutor: nestor}
+                        {tutor: jamie},
+                        {tutor: maxwell}
                     ]
     const FRI_3_4 = [
-                        {tutor: seth}
+                        {tutor: jamie},
+                        {tutor: nestor}
                     ]
     const FRI_4_5 = ['CLOSED']
     const FRI_5_6 = ['CLOSED']
+    const FRI_6_7 = ['CLOSED']
+    const FRI_7_8 = ['CLOSED']
+
     
 </script>
 
@@ -1351,6 +1427,90 @@
                             </Listgroup>
                         </TableBodyCell>
                     </TableBodyRow>
+
+                    <TableBodyRow>
+                        <TableBodyCell>6:00 - 7:00 P.M.</TableBodyCell>
+                        <!-- MON -->
+                        <TableBodyCell>
+                            <Listgroup items={MON_6_7} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
+                            </Listgroup>
+                        </TableBodyCell>
+                        <!-- TUE -->
+                        <TableBodyCell>
+                            <Listgroup items={TUE_6_7} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
+                            </Listgroup>
+                        </TableBodyCell>
+                        <!-- WED -->
+                        <TableBodyCell>
+                            <Listgroup items={WED_6_7} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
+                            </Listgroup>
+                        </TableBodyCell>
+                        <!-- THU -->
+                        <TableBodyCell>
+                            <Listgroup items={THUR_6_7} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
+                            </Listgroup>
+                        </TableBodyCell>
+                        <!-- FRI -->
+                        <TableBodyCell>
+                            <Listgroup items={FRI_6_7} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                {item}
+                            </Listgroup>
+                        </TableBodyCell>
+                    </TableBodyRow>
+
+                    <TableBodyRow>
+                        <TableBodyCell>7:00 - 8:00 P.M.</TableBodyCell>
+                        <!-- MON -->
+                        <TableBodyCell>
+                            <Listgroup items={MON_7_8} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
+                            </Listgroup>
+                        </TableBodyCell>
+                        <!-- TUE -->
+                        <TableBodyCell>
+                            <Listgroup items={TUE_7_8} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
+                            </Listgroup>
+                        </TableBodyCell>
+                        <!-- WED -->
+                        <TableBodyCell>
+                            <Listgroup items={WED_7_8} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
+                            </Listgroup>
+                        </TableBodyCell>
+                        <!-- THU -->
+                        <TableBodyCell>
+                            <Listgroup items={THUR_7_8} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                <span style="color:{item.tutor.t_color}">
+                                    {item.tutor.t_name} {item.note}
+                                  </span>
+                            </Listgroup>
+                        </TableBodyCell>
+                        <!-- FRI -->
+                        <TableBodyCell>
+                            <Listgroup items={FRI_7_8} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
+                                {item}
+                            </Listgroup>
+                        </TableBodyCell>
+                    </TableBodyRow>
                 </TableBody>
             </Table>
         </div>
@@ -1471,6 +1631,28 @@
                                 </TableBodyCell>
                             </TableBodyRow>
 
+                            <TableBodyRow>
+                                <TableBodyCell>6:00 - 7:00 P.M.</TableBodyCell>
+                                <TableBodyCell>
+                                    <Listgroup items={MON_6_7} let:item class="w-25 text-center shadow-md black-color">
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
+                                    </Listgroup>
+                                </TableBodyCell>
+                            </TableBodyRow>
+
+                            <TableBodyRow>
+                                <TableBodyCell>7:00 - 8:00 P.M.</TableBodyCell>
+                                <TableBodyCell>
+                                    <Listgroup items={MON_7_8} let:item class="w-25 text-center shadow-md black-color">
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
+                                    </Listgroup>
+                                </TableBodyCell>
+                            </TableBodyRow>
+
                         </TableBody>
                     </Table>    
                 </TabItem>
@@ -1584,6 +1766,28 @@
                                 </TableBodyCell>
                             </TableBodyRow>
 
+                            <TableBodyRow>
+                                <TableBodyCell>6:00 - 7:00 P.M.</TableBodyCell>
+                                <TableBodyCell>
+                                    <Listgroup items={TUE_6_7} let:item class="w-25 text-center shadow-md black-color">
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
+                                    </Listgroup>
+                                </TableBodyCell>
+                            </TableBodyRow>
+
+                            <TableBodyRow>
+                                <TableBodyCell>7:00 - 8:00 P.M.</TableBodyCell>
+                                <TableBodyCell>
+                                    <Listgroup items={TUE_7_8} let:item class="w-25 text-center shadow-md black-color">
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
+                                    </Listgroup>
+                                </TableBodyCell>
+                            </TableBodyRow>
+
                         </TableBody>
                     </Table>
                 </TabItem>
@@ -1689,6 +1893,28 @@
                                 <TableBodyCell>5:00 - 6:00 P.M.</TableBodyCell>
                                 <TableBodyCell>
                                     <Listgroup items={WED_5_6} let:item class="w-25 text-center shadow-md black-color">
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
+                                    </Listgroup>
+                                </TableBodyCell>
+                            </TableBodyRow>
+
+                            <TableBodyRow>
+                                <TableBodyCell>6:00 - 7:00 P.M.</TableBodyCell>
+                                <TableBodyCell>
+                                    <Listgroup items={WED_6_7} let:item class="w-25 text-center shadow-md black-color">
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
+                                    </Listgroup>
+                                </TableBodyCell>
+                            </TableBodyRow>
+
+                            <TableBodyRow>
+                                <TableBodyCell>7:00 - 8:00 P.M.</TableBodyCell>
+                                <TableBodyCell>
+                                    <Listgroup items={WED_7_8} let:item class="w-25 text-center shadow-md black-color">
                                         <span style="color:{item.tutor.t_color}">
                                             {item.tutor.t_name} {item.note}
                                           </span>
@@ -1812,6 +2038,28 @@
                                 </TableBodyCell>
                             </TableBodyRow>
 
+                            <TableBodyRow>
+                                <TableBodyCell>6:00 - 7:00 P.M.</TableBodyCell>
+                                <TableBodyCell>
+                                    <Listgroup items={THUR_6_7} let:item class="w-25 text-center shadow-md black-color">
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
+                                    </Listgroup>
+                                </TableBodyCell>
+                            </TableBodyRow>
+
+                            <TableBodyRow>
+                                <TableBodyCell>7:00 - 8:00 P.M.</TableBodyCell>
+                                <TableBodyCell>
+                                    <Listgroup items={THUR_7_8} let:item class="w-25 text-center shadow-md black-color">
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
+                                    </Listgroup>
+                                </TableBodyCell>
+                            </TableBodyRow>
+
                         </TableBody>
                     </Table>
                 
@@ -1920,6 +2168,28 @@
                                 <TableBodyCell>
                                     <Listgroup items={FRI_5_6} let:item class="md:w-fit mx-auto text-center shadow-md black-color">
                                         {item}
+                                    </Listgroup>
+                                </TableBodyCell>
+                            </TableBodyRow>
+
+                            <TableBodyRow>
+                                <TableBodyCell>6:00 - 7:00 P.M.</TableBodyCell>
+                                <TableBodyCell>
+                                    <Listgroup items={FRI_6_7} let:item class="w-25 text-center shadow-md black-color">
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
+                                    </Listgroup>
+                                </TableBodyCell>
+                            </TableBodyRow>
+
+                            <TableBodyRow>
+                                <TableBodyCell>7:00 - 8:00 P.M.</TableBodyCell>
+                                <TableBodyCell>
+                                    <Listgroup items={FRI_7_8} let:item class="w-25 text-center shadow-md black-color">
+                                        <span style="color:{item.tutor.t_color}">
+                                            {item.tutor.t_name} {item.note}
+                                          </span>
                                     </Listgroup>
                                 </TableBodyCell>
                             </TableBodyRow>
