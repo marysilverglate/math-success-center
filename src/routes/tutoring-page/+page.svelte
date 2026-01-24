@@ -856,7 +856,7 @@
                         {tutor: maxwell}
                     ]
     const FRI_3_4 = [
-                        {tutor: jamie}
+                        {tutor: jamie},
                         {tutor: nestor}
                     ]
     const FRI_4_5 = ['CLOSED']
