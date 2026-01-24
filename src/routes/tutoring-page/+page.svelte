@@ -774,8 +774,8 @@
 
     // THURSDAY                
     const THUR_9_10 = [
-                        {tutor: andrew, note: "(9:30-)"}
-                        {tutor: nestor},
+                        {tutor: andrew, note: "(9:30-)"},
+                        {tutor: nestor}
                     ];
     const THUR_10_11 = [
                         { tutor: andrew},
