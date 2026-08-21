@@ -635,7 +635,7 @@
      
     // MONDAY
     const MON_9_10 = [
-                        {tutor: maxwell},
+                        {tutor: maxwell, note: "Computer Science 1"},
                         {tutor: jamie}
                     ];
     const MON_10_11 = [
@@ -661,29 +661,29 @@
     const MON_2_3 = [
                         {tutor: mattie},
                         {tutor: jamie},
-                        {tutor: maxwell}
+                        {tutor: maxwell, note: "Computer Science 1"}
                     ];
     const MON_3_4 = [
                         {tutor: nate},
-                        {tutor: maxwell}
+                        {tutor: maxwell, note: "Computer Science 1"}
                     ];
     const MON_4_5 = [
                         {tutor: nate},
-                        {tutor: maxwell}
+                        {tutor: maxwell, note: "Computer Science 1"}
                     ];
     const MON_5_6 = [
                         {tutor: mattie},
-                        {tutor: jordan},
+                        {tutor: jordan, note: "Computer Science 1 and Physics 1"},
                         {tutor: rowan}
                     ];
     const MON_6_7 = [
                         {tutor: mattie},
-                        {tutor: jordan},
+                        {tutor: jordan, note: "Computer Science 1 and Physics 1"},
                         {tutor: madison}
                     ];
     const MON_7_8 = [
                         {tutor: mattie},
-                        {tutor: jordan},
+                        {tutor: jordan, note: "Computer Science 1 and Physics 1"},
                         {tutor: madison}
                     ];
                     
@@ -691,15 +691,15 @@
     // TUESDAY
     const TUE_9_10 = [
                         {tutor: desi},
-                        {tutor: jordan}
+                        {tutor: jordan, note: "Computer Science 1 and Physics 1"}
                     ];
     const TUE_10_11 = [
-                        {tutor: jordan},
+                        {tutor: jordan, note: "Computer Science 1 and Physics 1"},
                         {tutor: desi},
                         {tutor: madison}
                     ];
     const TUE_11_12 = [
-                        {tutor: jordan},
+                        {tutor: jordan, note: "Computer Science 1 and Physics 1"},
                         {tutor: desi},
                         {tutor: madison}
                     ];
@@ -716,38 +716,38 @@
     const TUE_2_3 = [
                         {tutor: mary},
                         {tutor: nate, note: "(2:30-)"},
-                        {tutor: maxwell, note: "(2:30-)"}
+                        {tutor: maxwell, note: "Computer Science 1 (2:30-)"}
                     ];
     const TUE_3_4 = [
-                        {tutor: bailey},
+                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
                         {tutor: nate},
-                        {tutor: maxwell}
+                        {tutor: maxwell, note: "Computer Science 1"}
                     ];
     const TUE_4_5 = [
-                        {tutor: bailey},
+                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
                         {tutor: nate},
-                        {tutor: maxwell}
+                        {tutor: maxwell, note: "Computer Science 1"}
                     ];
     const TUE_5_6 = [
-                        {tutor: bailey},
+                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
                         {tutor: mattie},
-                        {tutor: jordan}
+                        {tutor: jordan, note: "Computer Science 1 and Physics 1"}
                     ];
     const TUE_6_7 = [
-                        {tutor: bailey},
+                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
                         {tutor: mattie},
-                        {tutor: jordan}
+                        {tutor: jordan, note: "Computer Science 1 and Physics 1"}
                     ];
     const TUE_7_8 = [
-                        {tutor: bailey},
+                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
                         {tutor: mattie},
-                        {tutor: jordan}
+                        {tutor: jordan, note: "Computer Science 1 and Physics 1"}
                     ];
 
     // WEDNESDAY
     const WED_9_10 = [
                         {tutor: mattie},
-                        {tutor: maxwell},
+                        {tutor: maxwell, note: "Computer Science 1"},
                     ];
     const WED_10_11 = [
                         {tutor: mattie},
@@ -761,7 +761,7 @@
                     ];
     const WED_12_1 = [
                         {tutor: rowan },
-                        {tutor: madison },
+                        {tutor: madison},
                         {tutor: mary}
                     ];
     const WED_1_2 = [
@@ -771,39 +771,39 @@
                     ];
     const WED_2_3 = [
                         {tutor: jamie},
-                        {tutor: maxwell},
+                        {tutor: maxwell, note: "Computer Science 1"},
                         {tutor: desi}
                     ];
     const WED_3_4 = [
-                        {tutor: bailey},
+                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
                         {tutor: jamie},
-                        {tutor: maxwell}
+                        {tutor: maxwell, note: "Computer Science 1"}
                     ];
     const WED_4_5 = [
-                        {tutor: bailey},
+                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
                         {tutor: nate},
-                        {tutor: maxwell}
+                        {tutor: maxwell, note: "Computer Science 1"}
                     ];
     const WED_5_6 = [
-                        {tutor: bailey},
+                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
                         {tutor: nate},
-                        {tutor: jordan}
+                        {tutor: jordan, note: "Computer Science 1 and Physics 1"}
                     ];
     const WED_6_7 = [
-                        {tutor: bailey},
-                        {tutor: jordan},
+                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
+                        {tutor: jordan, note: "Computer Science 1 and Physics 1"},
                         {tutor: madison}
                     ];
     const WED_7_8 = [
-                        {tutor: bailey},
-                        {tutor: jordan},
+                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
+                        {tutor: jordan, note: "Computer Science 1 and Physics 1"},
                         {tutor: madison}
                     ];
 
     // THURSDAY                
     const THUR_9_10 = [
                         {tutor: rowan},
-                        {tutor: jordan}
+                        {tutor: jordan, note: "Computer Science 1 and Physics 1"}
                     ];
     const THUR_10_11 = [
                         { tutor: mattie}
@@ -811,7 +811,7 @@
     const THUR_11_12 = [
                         {tutor: mattie},
                         {tutor: rowan},
-                        {tutor: jordan}
+                        {tutor: jordan, note: "Computer Science 1 and Physics 1"}
                     ];
     const THUR_12_1 = [
                         {tutor: mattie}, 
@@ -825,39 +825,39 @@
     const THUR_2_3 = [
                         {tutor: madison},
                         {tutor: mary, note: "(-2:30)"},
-                        {tutor: maxwell, note: "(2:30-)"},
+                        {tutor: maxwell, note: "Computer Science 1 (2:30-)"},
                         {tutor: nate, note: "(2:30-)"}
                         
                     ]
     const THUR_3_4 = [
                         {tutor: desi},
-                        {tutor: maxwell},
+                        {tutor: maxwell, note: "Computer Science 1"},
                         {tutor: madison}
                     ]
     const THUR_4_5 = [
                         {tutor: desi},
-                        {tutor: maxwell},
+                        {tutor: maxwell, note: "Computer Science 1"},
                         {tutor: nate}
                     ]
     const THUR_5_6 = [
-                        {tutor: bailey},
-                        {tutor: maxwell},
+                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
+                        {tutor: maxwell, note: "Computer Science 1"},
                         {tutor: nate}
                     ]
     const THUR_6_7 = [
-                        {tutor: bailey},
+                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
                         {tutor: rowan},
                         {tutor: nate}
                     ];
     const THUR_7_8 = [
-                        {tutor: bailey},
+                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
                         {tutor: rowan},
                         {tutor: nate}
                     ];
 
     //FRIDAY
     const FRI_9_10 = [
-                        {tutor: maxwell},
+                        {tutor: maxwell, note: "Computer Science 1"},
                         {tutor: jamie}
                     ]
     const FRI_10_11 = [
@@ -1049,7 +1049,7 @@
     <!-- Tutor Schedule -->
     <h2 class="text-4xl font-bold mt-10 text-center"> Tutor-Specific Schedule </h2> 
 
-    <p class="mt-5 w-1/2 mx-auto text-center">Here is the full tutoring schedule if you'd like to plan ahead or prefer to manually search for a tutor.<br>Note: Tutors shown in black assist with mathematics only, those in red also support computer science, and those in purple support both computer science and physics.</p>
+    <p class="mt-5 w-1/2 mx-auto text-center">Here is the full tutoring schedule if you'd like to plan ahead or prefer to manually search for a tutor.<br>Note: Tutors shown in black assist with mathematics only, those in red also support computer science, those in blue support physics, and those in purple support both computer science and physics.</p>
 
     <!-- Tutor Scheudle Tablet and Desktop view -->
     <div class="flex justify-center mb-20">
