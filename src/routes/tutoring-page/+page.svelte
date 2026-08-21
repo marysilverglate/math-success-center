@@ -792,7 +792,7 @@
     const WED_6_7 = [
                         {tutor: bailey},
                         {tutor: jordan},
-                        {tutor: madson}
+                        {tutor: madison}
                     ];
     const WED_7_8 = [
                         {tutor: bailey},
