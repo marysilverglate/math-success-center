@@ -77,7 +77,7 @@
         <!-- Mattie -->
         <CardComp
             name="Mattie" 
-            imgUrl="./about-page-img/Mattie.jpeg" 
+            imgUrl="./about-page-img/Mattie.jpg" 
             imgAlt="Image of the tutor, Mattie">
             
             <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Computer Science']}>
@@ -149,6 +149,142 @@
                     <p>M T W R F</p>
                 </AccordionItem>  
                 </AccordianComp> 
+        </CardComp>
+
+        <!-- Desi -->
+        <CardComp
+            name="Desi" 
+            imgUrl="./about-page-img/Desi.jpeg" 
+            imgAlt="Image of the tutor, Desi">
+            
+            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Computer Science']}>
+                <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
+                    <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
+                    <List tag="ul" class="black-color text-left leading-loose">
+                        <Li><span>Status/Year:</span> </Li>
+                        <Li><span>Major:</span> </Li>
+                        <Li><span>Minor: </span> </Li>
+                        <Li><span>Hometown:</span> </Li>
+                        <Li><span>Favorite math course:</span> </Li>
+                        <Li><span>Favorite thing about math:</span> </Li>
+                        <Li><span>Fun fact:</span> </Li>
+                    </List>
+                </AccordionItem>
+                <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
+                    <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
+                    <p>M T W F</p>
+                </AccordionItem>
+            </AccordianComp>
+            
+        </CardComp>
+
+        <!-- Jamie -->
+        <CardComp
+            name="Jamie" 
+            imgUrl="./about-page-img/Jamie.jpg" 
+            imgAlt="Image of the tutor, Jamie">
+            
+            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Computer Science']}>
+                <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
+                    <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
+                    <List tag="ul" class="black-color text-left leading-loose">
+                        <Li><span>Status/Year:</span> </Li>
+                        <Li><span>Major:</span> </Li>
+                        <Li><span>Minor: </span> </Li>
+                        <Li><span>Hometown:</span> </Li>
+                        <Li><span>Favorite math course:</span> </Li>
+                        <Li><span>Favorite thing about math:</span> </Li>
+                        <Li><span>Fun fact:</span> </Li>
+                    </List>
+                </AccordionItem>
+                <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
+                    <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
+                    <p>M T W F</p>
+                </AccordionItem>
+            </AccordianComp>
+            
+        </CardComp>
+
+        <!-- Jordan -->
+        <CardComp
+            name="Jordan" 
+            imgUrl="./about-page-img/Jordan.jpeg" 
+            imgAlt="Image of the tutor, Jordan">
+            
+            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Computer Science']}>
+                <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
+                    <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
+                    <List tag="ul" class="black-color text-left leading-loose">
+                        <Li><span>Status/Year:</span> </Li>
+                        <Li><span>Major:</span> </Li>
+                        <Li><span>Minor: </span> </Li>
+                        <Li><span>Hometown:</span> </Li>
+                        <Li><span>Favorite math course:</span> </Li>
+                        <Li><span>Favorite thing about math:</span> </Li>
+                        <Li><span>Fun fact:</span> </Li>
+                    </List>
+                </AccordionItem>
+                <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
+                    <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
+                    <p>M T W F</p>
+                </AccordionItem>
+            </AccordianComp>
+            
+        </CardComp>
+
+
+        <!-- Rowan -->
+        <CardComp
+            name="Rowan" 
+            imgUrl="./about-page-img/Rowan.jpg" 
+            imgAlt="Image of the tutor, Rowan">
+            
+            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Computer Science']}>
+                <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
+                    <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
+                    <List tag="ul" class="black-color text-left leading-loose">
+                        <Li><span>Status/Year:</span> </Li>
+                        <Li><span>Major:</span> </Li>
+                        <Li><span>Minor: </span> </Li>
+                        <Li><span>Hometown:</span> </Li>
+                        <Li><span>Favorite math course:</span> </Li>
+                        <Li><span>Favorite thing about math:</span> </Li>
+                        <Li><span>Fun fact:</span> </Li>
+                    </List>
+                </AccordionItem>
+                <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
+                    <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
+                    <p>M T W F</p>
+                </AccordionItem>
+            </AccordianComp>
+            
+        </CardComp>
+
+        <!-- Madison -->
+        <CardComp
+            name="Madison" 
+            imgUrl="./about-page-img/Madison.jpeg" 
+            imgAlt="Image of the tutor, Madison">
+            
+            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Computer Science']}>
+                <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
+                    <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
+                    <List tag="ul" class="black-color text-left leading-loose">
+                        <Li><span>Status/Year:</span> </Li>
+                        <Li><span>Major:</span> </Li>
+                        <Li><span>Minor: </span> </Li>
+                        <Li><span>Hometown:</span> </Li>
+                        <Li><span>Favorite math course:</span> </Li>
+                        <Li><span>Favorite thing about math:</span> </Li>
+                        <Li><span>Fun fact:</span> </Li>
+                    </List>
+                </AccordionItem>
+                <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
+                    <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
+                    <p>M T W F</p>
+                </AccordionItem>
+            </AccordianComp>
+            
         </CardComp>
 
         <!-- Dr. J -->
