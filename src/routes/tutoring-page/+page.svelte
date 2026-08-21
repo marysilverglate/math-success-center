@@ -635,7 +635,7 @@
      
     // MONDAY
     const MON_9_10 = [
-                        {tutor: maxwell, note: "Computer Science 1"},
+                        {tutor: maxwell, note: "(CS 1)"},
                         {tutor: jamie}
                     ];
     const MON_10_11 = [
@@ -661,29 +661,29 @@
     const MON_2_3 = [
                         {tutor: mattie},
                         {tutor: jamie},
-                        {tutor: maxwell, note: "Computer Science 1"}
+                        {tutor: maxwell, note: "(CS1)"}
                     ];
     const MON_3_4 = [
                         {tutor: nate},
-                        {tutor: maxwell, note: "Computer Science 1"}
+                        {tutor: maxwell, note: "(CS1)"}
                     ];
     const MON_4_5 = [
                         {tutor: nate},
-                        {tutor: maxwell, note: "Computer Science 1"}
+                        {tutor: maxwell, note: "(CS1)"}
                     ];
     const MON_5_6 = [
                         {tutor: mattie},
-                        {tutor: jordan, note: "Computer Science 1 and Physics 1"},
+                        {tutor: jordan, note: "(CS1 & P1)"},
                         {tutor: rowan}
                     ];
     const MON_6_7 = [
                         {tutor: mattie},
-                        {tutor: jordan, note: "Computer Science 1 and Physics 1"},
+                        {tutor: jordan, note: "(CS1 & P1)"},
                         {tutor: madison}
                     ];
     const MON_7_8 = [
                         {tutor: mattie},
-                        {tutor: jordan, note: "Computer Science 1 and Physics 1"},
+                        {tutor: jordan, note: "(CS1 & P1)"},
                         {tutor: madison}
                     ];
                     
@@ -691,15 +691,15 @@
     // TUESDAY
     const TUE_9_10 = [
                         {tutor: desi},
-                        {tutor: jordan, note: "Computer Science 1 and Physics 1"}
+                        {tutor: jordan, note: "(CS1 & P1)"}
                     ];
     const TUE_10_11 = [
-                        {tutor: jordan, note: "Computer Science 1 and Physics 1"},
+                        {tutor: jordan, note: "(CS1 & P1)"},
                         {tutor: desi},
                         {tutor: madison}
                     ];
     const TUE_11_12 = [
-                        {tutor: jordan, note: "Computer Science 1 and Physics 1"},
+                        {tutor: jordan, note: "(CS1 & P1)"},
                         {tutor: desi},
                         {tutor: madison}
                     ];
@@ -715,39 +715,39 @@
                     ];
     const TUE_2_3 = [
                         {tutor: mary},
-                        {tutor: nate, note: "(2:30-)"},
-                        {tutor: maxwell, note: "Computer Science 1 (2:30-)"}
+                        {tutor: nate, note: "[2:30-]"},
+                        {tutor: maxwell, note: "(CS1) [2:30-]"}
                     ];
     const TUE_3_4 = [
-                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
+                        {tutor: bailey, note: "(CS1 & P1)"},
                         {tutor: nate},
-                        {tutor: maxwell, note: "Computer Science 1"}
+                        {tutor: maxwell, note: "(CS1)"}
                     ];
     const TUE_4_5 = [
-                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
+                        {tutor: bailey, note: "(CS1 & P1)"},
                         {tutor: nate},
-                        {tutor: maxwell, note: "Computer Science 1"}
+                        {tutor: maxwell, note: "(CS1)"}
                     ];
     const TUE_5_6 = [
-                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
+                        {tutor: bailey, note: "(CS1 & P1)"},
                         {tutor: mattie},
-                        {tutor: jordan, note: "Computer Science 1 and Physics 1"}
+                        {tutor: jordan, note: "(CS1 & P1)"}
                     ];
     const TUE_6_7 = [
-                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
+                        {tutor: bailey, note: "(CS1 & P1)"},
                         {tutor: mattie},
-                        {tutor: jordan, note: "Computer Science 1 and Physics 1"}
+                        {tutor: jordan, note: "(CS1 & P1)"}
                     ];
     const TUE_7_8 = [
-                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
+                        {tutor: bailey, note: "(CS1 & P1)"},
                         {tutor: mattie},
-                        {tutor: jordan, note: "Computer Science 1 and Physics 1"}
+                        {tutor: jordan, note: "(CS1 & P1)"}
                     ];
 
     // WEDNESDAY
     const WED_9_10 = [
                         {tutor: mattie},
-                        {tutor: maxwell, note: "Computer Science 1"},
+                        {tutor: maxwell, note: "(CS1)"},
                     ];
     const WED_10_11 = [
                         {tutor: mattie},
@@ -771,39 +771,39 @@
                     ];
     const WED_2_3 = [
                         {tutor: jamie},
-                        {tutor: maxwell, note: "Computer Science 1"},
+                        {tutor: maxwell, note: "(CS1)"},
                         {tutor: desi}
                     ];
     const WED_3_4 = [
-                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
+                        {tutor: bailey, note: "(CS1 & P1)"},
                         {tutor: jamie},
-                        {tutor: maxwell, note: "Computer Science 1"}
+                        {tutor: maxwell, note: "(CS1)"}
                     ];
     const WED_4_5 = [
-                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
+                        {tutor: bailey, note: "(CS1 & P1)"},
                         {tutor: nate},
-                        {tutor: maxwell, note: "Computer Science 1"}
+                        {tutor: maxwell, note: "(CS1)"}
                     ];
     const WED_5_6 = [
-                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
+                        {tutor: bailey, note: "(CS1 & P1)"},
                         {tutor: nate},
-                        {tutor: jordan, note: "Computer Science 1 and Physics 1"}
+                        {tutor: jordan, note: "(CS1 & P1)"}
                     ];
     const WED_6_7 = [
-                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
-                        {tutor: jordan, note: "Computer Science 1 and Physics 1"},
+                        {tutor: bailey, note: "(CS1 & P1)"},
+                        {tutor: jordan, note: "(CS1 & P1)"},
                         {tutor: madison}
                     ];
     const WED_7_8 = [
-                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
-                        {tutor: jordan, note: "Computer Science 1 and Physics 1"},
+                        {tutor: bailey, note: "(CS1 & P1)"},
+                        {tutor: jordan, note: "(CS1 & P1)"},
                         {tutor: madison}
                     ];
 
     // THURSDAY                
     const THUR_9_10 = [
                         {tutor: rowan},
-                        {tutor: jordan, note: "Computer Science 1 and Physics 1"}
+                        {tutor: jordan, note: "(CS1 & P1)"}
                     ];
     const THUR_10_11 = [
                         { tutor: mattie}
@@ -811,7 +811,7 @@
     const THUR_11_12 = [
                         {tutor: mattie},
                         {tutor: rowan},
-                        {tutor: jordan, note: "Computer Science 1 and Physics 1"}
+                        {tutor: jordan, note: "(CS1 & P1)"}
                     ];
     const THUR_12_1 = [
                         {tutor: mattie}, 
@@ -824,40 +824,40 @@
                     ];
     const THUR_2_3 = [
                         {tutor: madison},
-                        {tutor: mary, note: "(-2:30)"},
-                        {tutor: maxwell, note: "Computer Science 1 (2:30-)"},
-                        {tutor: nate, note: "(2:30-)"}
+                        {tutor: mary, note: "[-2:30]"},
+                        {tutor: maxwell, note: "(CS1) [2:30-]"},
+                        {tutor: nate, note: "[2:30-]"}
                         
                     ]
     const THUR_3_4 = [
                         {tutor: desi},
-                        {tutor: maxwell, note: "Computer Science 1"},
+                        {tutor: maxwell, note: "(CS1)"},
                         {tutor: madison}
                     ]
     const THUR_4_5 = [
                         {tutor: desi},
-                        {tutor: maxwell, note: "Computer Science 1"},
+                        {tutor: maxwell, note: "(CS1)"},
                         {tutor: nate}
                     ]
     const THUR_5_6 = [
-                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
-                        {tutor: maxwell, note: "Computer Science 1"},
+                        {tutor: bailey, note: "(CS1 & P1)"},
+                        {tutor: maxwell, note: "(CS1)"},
                         {tutor: nate}
                     ]
     const THUR_6_7 = [
-                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
+                        {tutor: bailey, note: "(CS1 & P1)"},
                         {tutor: rowan},
                         {tutor: nate}
                     ];
     const THUR_7_8 = [
-                        {tutor: bailey, note: "Computer Science 1 and Physics 1"},
+                        {tutor: bailey, note: "(CS1 & P1)"},
                         {tutor: rowan},
                         {tutor: nate}
                     ];
 
     //FRIDAY
     const FRI_9_10 = [
-                        {tutor: maxwell, note: "Computer Science 1"},
+                        {tutor: maxwell, note: "(CS1)"},
                         {tutor: jamie}
                     ]
     const FRI_10_11 = [
@@ -873,7 +873,7 @@
                         {tutor: mattie},
                         {tutor: jamie},
                         {tutor: rowan},
-                        {tutor: drj, note: "(12:30-)"}
+                        {tutor: drj, note: "[12:30-]"}
                     ]
     const FRI_1_2 = [
                         {tutor: jamie},
