@@ -43,7 +43,7 @@
                 </AccordionItem>
                 <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
-                    <p>M T W R</p>
+                    <p>M T W R F</p>
                 </AccordionItem>
             </AccordianComp>
 
@@ -69,7 +69,7 @@
                 </AccordionItem>
                 <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
-                    <p>M T W R</p>
+                    <p>T W R</p>
                 </AccordionItem>
             </AccordianComp>
         </CardComp>
@@ -94,7 +94,7 @@
                 </AccordionItem>
                 <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
-                    <p>M T W F</p>
+                    <p>M T W R F</p>
                 </AccordionItem>
             </AccordianComp>
             
@@ -114,8 +114,8 @@
                         <Li><span>Minor: </span>Mathematics</Li>
                         <Li><span>Hometown:</span>Troy, MO</Li>
                         <Li><span>Favorite math course:</span> Calculus</Li>
-                        <Li><span>Favorite thing about math:</span>Getting to apply math to real life problems/situations</Li>
-                        <Li><span>Fun fact:</span>I am a cheerleader here at Lindenwood</Li>
+                        <Li><span>Favorite thing about math:</span>Getting to apply math to real life problems and situations</Li>
+                        <Li><span>Fun fact:</span>I am a cheerleader here at Lindenwood!</Li>
                     </List>  
                 </AccordionItem>
                 <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
@@ -183,7 +183,7 @@
             imgUrl="./about-page-img/Jamie.jpg" 
             imgAlt="Image of the tutor, Jamie">
             
-            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Computer Science']}>
+            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2']}>
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
