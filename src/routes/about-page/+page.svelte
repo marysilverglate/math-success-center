@@ -59,10 +59,10 @@
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
                         <Li><span>Status/Year: </span>  Student, Senior</Li>
-                        <Li><span>Major: </span> Associates in Undergraduate Studies. Mathematics </Li>
+                        <Li><span>Major: </span> Mathematics </Li>
                         <Li><span>Minor: </span> Secondary Education and Spanish certificate</Li>
                         <Li><span>Hometown: </span> St. Louis, MO </Li>
-                        <Li><span>Favorite math course: </span> I love Calculus 2 and 3</Li>
+                        <Li><span>Favorite math course: </span> Calculus 2 and 3</Li>
                         <Li><span>Favorite thing about math: </span> I love how versatile math is and how much it is used in daily life. So many people use it without realizing it. The technology we use today is built on the math we developed all through time.</Li>
                         <Li><span>Fun fact:</span> I love to sing, game, draw, and read!</Li>
                     </List>  
@@ -80,13 +80,12 @@
             imgUrl="./about-page-img/Mattie.jpg" 
             imgAlt="Image of the tutor, Mattie">
             
-            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Computer Science']}>
+            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Computer Science 1', 'Computer Science 2']}>
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
-                        <Li><span>Status/Year:</span> Student, Junior</Li>
-                        <Li><span>Major:</span> Computer Science</Li>
-                        <Li><span>Minor: </span> Data Science</Li>
+                        <Li><span>Status/Year:</span> Student, Senior</Li>
+                        <Li><span>Major:</span> Computer Science and Data Science</Li>
                         <Li><span>Hometown:</span> St. Louis, Missouri</Li>
                         <Li><span>Favorite math course:</span> Calculus</Li>
                         <Li><span>Favorite thing about math:</span> The problem-solving aspect and the satisfaction/accomplishment you feel when completing a difficult problem!</Li>
@@ -106,11 +105,11 @@
             name="Maxwell"
             imgUrl="./about-page-img/Maxwell.jpeg" 
             imgAlt="Image of the tutor, Maxwell">
-            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2']}>
+            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Computer Science 1']}>
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
-                        <Li><span>Status/Year:</span> Student, Junior</Li>
+                        <Li><span>Status/Year:</span> Student, Senior</Li>
                         <Li><span>Major:</span> Mechanical engineering</Li>
                         <Li><span>Minor: </span>Mathematics</Li>
                         <Li><span>Hometown:</span>Troy, MO</Li>
@@ -131,15 +130,15 @@
             name="Nathaniel" 
             imgUrl="./about-page-img/Nathaniel.jpeg" 
             imgAlt="Image of the tutor, Nathaniel">
-            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Physics', 'Computer Science']}>
+            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2','Computer Science 1', 'Computer Science 2']}>
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
                         <Li><span>Status/Year:</span> Student, Junior</Li>
-                        <Li><span>Major:</span> Computer Science BS Data Science Emphasis </Li>
+                        <Li><span>Major:</span> Mathematics (Statistics Emphasis) </Li>
                         <Li><span>Hometown:</span> Jefferson City, Missouri </Li>
                         <Li><span>Favorite math course:</span> Calculus 2 </Li>
-                        <Li><span>Favorite thing about math:</span>The satisfaction of solving a math problem & The puzzle each problem gives you!</Li>
+                        <Li><span>Favorite thing about math:</span>The satisfaction of solving a math problem & the puzzle each problem gives you!</Li>
                         <Li><span>Fun fact:</span>I have a cate named Lorenzo.</Li>
 
                     </List>  
@@ -157,22 +156,22 @@
             imgUrl="./about-page-img/Desi.jpeg" 
             imgAlt="Image of the tutor, Desi">
             
-            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Computer Science']}>
+            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2']}>
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
-                        <Li><span>Status/Year:</span> </Li>
-                        <Li><span>Major:</span> </Li>
-                        <Li><span>Minor: </span> </Li>
-                        <Li><span>Hometown:</span> </Li>
-                        <Li><span>Favorite math course:</span> </Li>
-                        <Li><span>Favorite thing about math:</span> </Li>
+                        <Li><span>Status/Year:</span>Student, Senior</Li>
+                        <Li><span>Major:</span>Mathematics (Statistics Emphasis) and Data Science</Li>
+                        <Li><span>Minor: </span>Computer Science</Li>
+                        <Li><span>Hometown:</span>Edwardsville, Illinois</Li>
+                        <Li><span>Favorite math course:</span>Calculus 3</Li>
+                        <Li><span>Favorite thing about math:</span>There's many ways to solve the same problem!</Li>
                         <Li><span>Fun fact:</span> </Li>
                     </List>
                 </AccordionItem>
                 <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
-                    <p>M T W F</p>
+                    <p>M T W R F</p>
                 </AccordionItem>
             </AccordianComp>
             
@@ -188,18 +187,18 @@
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
-                        <Li><span>Status/Year:</span> </Li>
-                        <Li><span>Major:</span> </Li>
-                        <Li><span>Minor: </span> </Li>
-                        <Li><span>Hometown:</span> </Li>
-                        <Li><span>Favorite math course:</span> </Li>
-                        <Li><span>Favorite thing about math:</span> </Li>
-                        <Li><span>Fun fact:</span> </Li>
+                        <Li><span>Status/Year:</span>Student, Senior</Li>
+                        <Li><span>Major:</span>Mathematics</Li>
+                        <Li><span>Minor: </span>Secondary Education</Li>
+                        <Li><span>Hometown:</span>St.Charles, Missouri</Li>
+                        <Li><span>Favorite math course:</span>Algebra</Li>
+                        <Li><span>Favorite thing about math:</span>How logical it is like a puzzle.</Li>
+                        <Li><span>Fun fact:</span>I know how to knit and crochet!</Li>
                     </List>
                 </AccordionItem>
                 <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
-                    <p>M T W F</p>
+                    <p>M W F</p>
                 </AccordionItem>
             </AccordianComp>
             
@@ -211,22 +210,22 @@
             imgUrl="./about-page-img/Jordan.jpeg" 
             imgAlt="Image of the tutor, Jordan">
             
-            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Computer Science']}>
+            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Computer Science 1', 'Physics 1']}>
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
-                        <Li><span>Status/Year:</span> </Li>
-                        <Li><span>Major:</span> </Li>
-                        <Li><span>Minor: </span> </Li>
-                        <Li><span>Hometown:</span> </Li>
-                        <Li><span>Favorite math course:</span> </Li>
-                        <Li><span>Favorite thing about math:</span> </Li>
-                        <Li><span>Fun fact:</span> </Li>
+                        <Li><span>Status/Year:</span>Student, Junior </Li>
+                        <Li><span>Major:</span>Mathematics</Li>
+                        <Li><span>Minor: </span>Pre-Engineering</Li>
+                        <Li><span>Hometown:</span>St Louis, Missouri</Li>
+                        <Li><span>Favorite math course:</span>Calculus 2</Li>
+                        <Li><span>Favorite thing about math:</span>How rewarding it is to figure out the answer to a difficult problem.</Li>
+                        <Li><span>Fun fact:</span>I'm on the club hockey team!</Li>
                     </List>
                 </AccordionItem>
                 <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
-                    <p>M T W F</p>
+                    <p>M T W R</p>
                 </AccordionItem>
             </AccordianComp>
             
@@ -239,22 +238,21 @@
             imgUrl="./about-page-img/Rowan.jpg" 
             imgAlt="Image of the tutor, Rowan">
             
-            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Computer Science']}>
+            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Computer Science 1', 'Computer Science 2']}>
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
-                        <Li><span>Status/Year:</span> </Li>
-                        <Li><span>Major:</span> </Li>
-                        <Li><span>Minor: </span> </Li>
-                        <Li><span>Hometown:</span> </Li>
-                        <Li><span>Favorite math course:</span> </Li>
-                        <Li><span>Favorite thing about math:</span> </Li>
-                        <Li><span>Fun fact:</span> </Li>
+                        <Li><span>Status/Year:</span> Student, Senior</Li>
+                        <Li><span>Major:</span>Mathematics</Li>
+                        <Li><span>Hometown:</span>St. Charles, Missouri </Li>
+                        <Li><span>Favorite math course:</span>Differential Equations </Li>
+                        <Li><span>Favorite thing about math:</span> Thinking through the problem.</Li>
+                        <Li><span>Fun fact:</span>I rock climb outside! </Li>
                     </List>
                 </AccordionItem>
                 <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
-                    <p>M T W F</p>
+                    <p>M W R F</p>
                 </AccordionItem>
             </AccordianComp>
             
@@ -266,22 +264,21 @@
             imgUrl="./about-page-img/Madison.jpeg" 
             imgAlt="Image of the tutor, Madison">
             
-            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Computer Science']}>
+            <AccordianComp generalArray={generalTopic} specialArray={['Calculus 1', 'Calculus 2', 'Physics 1', 'Physics 2']}>
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
-                        <Li><span>Status/Year:</span> </Li>
-                        <Li><span>Major:</span> </Li>
-                        <Li><span>Minor: </span> </Li>
-                        <Li><span>Hometown:</span> </Li>
-                        <Li><span>Favorite math course:</span> </Li>
-                        <Li><span>Favorite thing about math:</span> </Li>
-                        <Li><span>Fun fact:</span> </Li>
+                        <Li><span>Status/Year:</span>Student, Junior</Li>
+                        <Li><span>Major:</span> Biochemistry</Li>
+                        <Li><span>Hometown:</span>Lake Country, BC, Canada</Li>
+                        <Li><span>Favorite math course:</span>Calculus 2</Li>
+                        <Li><span>Favorite thing about math:</span>I love the problem-solving aspect of it.</Li>
+                        <Li><span>Fun fact:</span>I play as a goalie on the women’s hockey team here at Lindenwood!</Li>
                     </List>
                 </AccordionItem>
                 <AccordionItem slot="availability" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">General Availability</h2>
-                    <p>M T W F</p>
+                    <p>M T W R</p>
                 </AccordionItem>
             </AccordianComp>
             
@@ -296,7 +293,7 @@
                 <AccordionItem slot="about-me" classInactive="hover:bg-[var(--lu-gold)]" classActive="bg-[var(--lu-gold)]">
                     <h2 slot="header" class="mx-auto font-bold text-xl">About Me</h2>
                     <List tag="ul" class="black-color text-left leading-loose">
-                        <Li><span>Status/Year:</span> Retired professor, currently a volunteer tutor</Li>
+                        <Li><span>Status/Year:</span>Professor</Li>
                         <Li><span>Major:</span> Double majored in Mathematics and Computer Science. Obtained a master's and PhD in Mathematics.</Li>
                         <Li><span>Hometown:</span> Born in Munich, Germany, due to my dad being in the army. I have been in St. Louis for 30 years—it feels like my "hometown."</Li>
                         <Li><span>Favorite math course:</span> I love all the math courses. If I have to pick one, Abstract Algebra.</Li>
