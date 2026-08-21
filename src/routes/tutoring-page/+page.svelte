@@ -470,23 +470,23 @@
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            
+                            [10,11], [11,12]
                           ],
                     /*T*/ 
                           [
-                            
+                            [9,10], [10,11], [11,12], [12,13]
                           ],
                     /*W*/ 
                           [
-                            
+                            [10,11], [11,12], [14,15]
                           ],
                     /*R*/ 
                           [
-                            
+                            [15,16], [16,17]
                           ], 
                     /*F*/ 
                           [
-                            
+                            [10,11], [14,15], [15,16]
                           ] 
                    ]
     };
@@ -501,19 +501,19 @@
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            
+                            [17,18], [18,19], [19,20]
                           ],
                     /*T*/ 
                           [
-                            
+                            [9,10], [10,11], [11,12], [17,18], [18,19], [19,20]
                           ],
                     /*W*/ 
                           [
-                            
+                            [17,18], [18,19], [19,20]
                           ],
                     /*R*/ 
                           [
-                            
+                            [9,10], [11,12]
                           ], 
                     /*F*/ 
                           [
@@ -532,7 +532,7 @@
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            
+                            [10,11], [11,12], [12,13], [17,18]
                           ],
                     /*T*/ 
                           [
@@ -540,15 +540,15 @@
                           ],
                     /*W*/ 
                           [
-                            
+                            [10,11], [11,12], [12,13], [13,14] 
                           ],
                     /*R*/ 
                           [
-                            
+                            [9,10], [11,12], [18,19], [19,20]
                           ], 
                     /*F*/ 
                           [
-                            
+                            [11,12], [12,13]
                           ] 
                    ]
     };
@@ -560,6 +560,37 @@
         t_color : "blue",
         // Tutor subject(s)
         t_subject : ["Physics 1", "Physics 2", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus", "Calculus 1", "Calculus 2"],
+        // Tutor hours
+        t_hours : [
+                    /*M*/ [ 
+                            [18,19], [19,20]
+                          ],
+                    /*T*/ 
+                          [
+                            [10,11], [11,12], [12,13], [13,14]
+                          ],
+                    /*W*/ 
+                          [
+                            [11,12], [12,13], [18,19], [19,20]
+                          ],
+                    /*R*/ 
+                          [
+                            [12,13], [13,14], [14,15], [15,16]
+                          ], 
+                    /*F*/ 
+                          [
+                            
+                          ] 
+                   ]
+    };
+
+    const drj = {
+        // Tutor name
+        t_name : "Dr.J (Jeevanjee)", 
+        // Tutor color
+        t_color : "red",
+        // Tutor subject(s)
+        t_subject : ["Physics 1", "Physics 2", "Computer Science 1", "Computer Science 2", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus", "Calculus 1", "Calculus 2"],
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
@@ -579,7 +610,7 @@
                           ], 
                     /*F*/ 
                           [
-                            
+                            [12.5,13], [13,14]
                           ] 
                    ]
     };
@@ -595,266 +626,267 @@
                      desi,
                      jordan,
                      rowan,
-                     madison
+                     madison,
+                     drj
     ];
         
 
     //For full tutor schedule. Holds which tutors work at each time slot
-
+     
     // MONDAY
     const MON_9_10 = [
-                        {tutor: seth},
-                        {tutor: nate}
+                        {tutor: maxwell},
+                        {tutor: jamie}
                     ];
     const MON_10_11 = [
-                        {tutor: mattie},
-                        {tutor: nate},
-                        {tutor: seth}
+                        {tutor: jamie},
+                        {tutor: rowan},
+                        {tutor: desi}
                     ];
     const MON_11_12 = [
-                        {tutor: nate},
-                        {tutor: nestor},
-                        {tutor: mary}
+                        {tutor: jamie},
+                        {tutor: rowan},
+                        {tutor: desi}
                     ];
     const MON_12_1 = [
-                        {tutor: mattie},
-                        {tutor: jamie, note: "(12:30-)" },
+                        {tutor: jamie},
+                        {tutor: rowan},
                         {tutor: mary}
                     ];
     const MON_1_2 = [
-                        {tutor: bailey},
+                        {tutor: mattie},
                         {tutor: jamie},
-                        {tutor: seth}
+                        {tutor: mary}
                     ];
     const MON_2_3 = [
-                        {tutor: andrew},
+                        {tutor: mattie},
                         {tutor: jamie},
-                        {tutor: seth}
+                        {tutor: maxwell}
                     ];
     const MON_3_4 = [
-                        {tutor: andrew},
                         {tutor: nate},
                         {tutor: maxwell}
                     ];
     const MON_4_5 = [
-                        {tutor: andrew},
                         {tutor: nate},
                         {tutor: maxwell}
                     ];
     const MON_5_6 = [
-                        {tutor: andrew},
-                        {tutor: maxwell},
-                        {tutor: nate}
+                        {tutor: mattie},
+                        {tutor: jordan},
+                        {tutor: rowan}
                     ];
     const MON_6_7 = [
-                        {tutor: bailey},
-                        {tutor: seth}
+                        {tutor: mattie},
+                        {tutor: jordan},
+                        {tutor: madison}
                     ];
     const MON_7_8 = [
-                        {tutor: bailey},
                         {tutor: mattie},
-                        {tutor: seth}
+                        {tutor: jordan},
+                        {tutor: madison}
                     ];
                     
 
     // TUESDAY
     const TUE_9_10 = [
-                        {tutor: andrew, note: "(9:30-)"},
-                        {tutor: bailey}
+                        {tutor: desi},
+                        {tutor: jordan}
                     ];
     const TUE_10_11 = [
-                        {tutor: andrew},
-                        {tutor: bailey},
-                        {tutor: mattie}
+                        {tutor: jordan},
+                        {tutor: desi},
+                        {tutor: madison}
                     ];
     const TUE_11_12 = [
-                        {tutor: andrew},
-                        {tutor: mattie},
-                        {tutor: mary}
+                        {tutor: jordan},
+                        {tutor: desi},
+                        {tutor: madison}
                     ];
     const TUE_12_1 = [
-                        {tutor: andrew}, 
-                        {tutor: mary},
-                        {tutor: bailey}
+                        {tutor: madison}, 
+                        {tutor: desi},
+                        {tutor: nate}
 
                     ];
     const TUE_1_2 = [
-                        {tutor: nestor},
-                        {tutor: bailey},
+                        {tutor: madison},
                         {tutor: mary}
                     ];
     const TUE_2_3 = [
-                        {tutor: bailey},
-                        {tutor: melissa},
-                        {tutor: nestor}
+                        {tutor: mary},
+                        {tutor: nate, note: "(2:30-)"},
+                        {tutor: maxwell, note: "(2:30-)"}
                     ];
     const TUE_3_4 = [
-                        {tutor: nestor},
                         {tutor: bailey},
-                        {tutor: melissa}
+                        {tutor: nate},
+                        {tutor: maxwell}
                     ];
     const TUE_4_5 = [
-                        {tutor: nestor},
-                        {tutor: melissa},
-                        {tutor: seth}
+                        {tutor: bailey},
+                        {tutor: nate},
+                        {tutor: maxwell}
                     ];
     const TUE_5_6 = [
                         {tutor: bailey},
-                        {tutor: melissa},
-                        {tutor: seth}
+                        {tutor: mattie},
+                        {tutor: jordan}
                     ];
     const TUE_6_7 = [
                         {tutor: bailey},
-                        {tutor: melissa}
+                        {tutor: mattie},
+                        {tutor: jordan}
                     ];
     const TUE_7_8 = [
-                        {tutor: mattie},
                         {tutor: bailey},
-                        {tutor: melissa}
+                        {tutor: mattie},
+                        {tutor: jordan}
                     ];
 
     // WEDNESDAY
     const WED_9_10 = [
-                        {tutor: andrew},
-                        {tutor: nate},
+                        {tutor: mattie},
+                        {tutor: maxwell},
                     ];
     const WED_10_11 = [
                         {tutor: mattie},
-                        {tutor: nate},
-                        {tutor: mary}
+                        {tutor: rowan},
+                        {tutor: desi}
                     ];
     const WED_11_12 = [
-                        {tutor: nate},
-                        {tutor: andrew, note: "(11:30-)"},
-                        {tutor: mary}
+                        {tutor: rowan},
+                        {tutor: desi},
+                        {tutor: madison}
                     ];
     const WED_12_1 = [
-                        {tutor: andrew },
-                        {tutor: mattie },
-                        {tutor: jamie, note: "(12:30-)" }
+                        {tutor: rowan },
+                        {tutor: madison },
+                        {tutor: mary}
                     ];
     const WED_1_2 = [
-                        {tutor: maxwell, note: "(1:30-)"},
                         {tutor: jamie},
-                        {tutor: andrew}
+                        {tutor: rowan},
+                        {tutor: mary}
                     ];
     const WED_2_3 = [
-                        {tutor: andrew, note: "(-2:30)"},
+                        {tutor: jamie},
                         {tutor: maxwell},
-                        {tutor: jamie}
+                        {tutor: desi}
                     ];
     const WED_3_4 = [
-                        {tutor: maxwell},
+                        {tutor: bailey},
                         {tutor: jamie},
-                        {tutor: melissa}
+                        {tutor: maxwell}
                     ];
     const WED_4_5 = [
-                        {tutor: melissa},
-                        {tutor: nestor},
-                        {tutor: nate}
+                        {tutor: bailey},
+                        {tutor: nate},
+                        {tutor: maxwell}
                     ];
     const WED_5_6 = [
-                        {tutor: nestor},
-                        {tutor: mattie},
-                        {tutor: nate}
+                        {tutor: bailey},
+                        {tutor: nate},
+                        {tutor: jordan}
                     ];
     const WED_6_7 = [
-                        {tutor: nestor},
-                        {tutor: mattie},
-                        {tutor: melissa}
+                        {tutor: bailey},
+                        {tutor: jordan},
+                        {tutor: madson}
                     ];
     const WED_7_8 = [
-                        {tutor: nestor},
-                        {tutor: mattie},
-                        {tutor: melissa}
+                        {tutor: bailey},
+                        {tutor: jordan},
+                        {tutor: madison}
                     ];
 
     // THURSDAY                
     const THUR_9_10 = [
-                        {tutor: andrew, note: "(9:30-)"},
-                        {tutor: nestor}
+                        {tutor: rowan},
+                        {tutor: jordan}
                     ];
     const THUR_10_11 = [
-                        { tutor: andrew},
-                        { tutor: mattie},
-                        { tutor: nestor}
+                        { tutor: mattie}
                     ];
     const THUR_11_12 = [
-                        {tutor: andrew},
-                        {tutor: mattie}
+                        {tutor: mattie},
+                        {tutor: rowan},
+                        {tutor: jordan}
                     ];
     const THUR_12_1 = [
-                        {tutor: andrew}, 
-                        {tutor: jamie},
-                        {tutor: bailey}
+                        {tutor: mattie}, 
+                        {tutor: madison}
                     ];
     const THUR_1_2 = [
-                        {tutor: jamie},
-                        {tutor: bailey},
-                        {tutor: melissa},
-                        {tutor: mary, note: "(1:30-)"}
+                        {tutor: mattie},
+                        {tutor: madison},
+                        {tutor: mary}
                     ];
     const THUR_2_3 = [
-                        {tutor: melissa},
-                        {tutor: maxwell, note: "(2:15-)"},
-                        {tutor: mary, note: "(-2:30)"}
+                        {tutor: madison},
+                        {tutor: mary, note: "(-2:30)"},
+                        {tutor: maxwell, note: "(2:30-)"},
+                        {tutor: nate, note: "(2:30-)"}
+                        
                     ]
     const THUR_3_4 = [
-                        {tutor: melissa},
-                        {tutor: seth},
-                        {tutor: maxwell}
+                        {tutor: desi},
+                        {tutor: maxwell},
+                        {tutor: madison}
                     ]
     const THUR_4_5 = [
-                        {tutor: melissa},
-                        {tutor: seth},
-                        {tutor: maxwell}
+                        {tutor: desi},
+                        {tutor: maxwell},
+                        {tutor: nate}
                     ]
     const THUR_5_6 = [
-                        {tutor: nestor},
+                        {tutor: bailey},
                         {tutor: maxwell},
-                        {tutor: jamie, note: "(5:30-)"}
+                        {tutor: nate}
                     ]
     const THUR_6_7 = [
-                        {tutor: nestor},
-                        {tutor: jamie},
-                        {tutor: maxwell}
+                        {tutor: bailey},
+                        {tutor: rowan},
+                        {tutor: nate}
                     ];
     const THUR_7_8 = [
-                        {tutor: nestor},
-                        {tutor: jamie},
-                        {tutor: mattie}
+                        {tutor: bailey},
+                        {tutor: rowan},
+                        {tutor: nate}
                     ];
 
     //FRIDAY
     const FRI_9_10 = [
-                        {tutor: nate},
-                        {tutor: seth}
+                        {tutor: maxwell},
+                        {tutor: jamie}
                     ]
     const FRI_10_11 = [
-                        {tutor: nate},
-                        {tutor: seth},
-                        {tutor: mattie}
+                        {tutor: jamie},
+                        {tutor: desi}
                     ]
     const FRI_11_12 = [
+                        {tutor: jamie},
                         {tutor: nate},
-                        {tutor: seth}
+                        {tutor: rowan}
                     ]
     const FRI_12_1 = [
-                        {tutor: jamie, note: "(12:30-)"},
-                        {tutor: seth}
+                        {tutor: mattie},
+                        {tutor: jamie},
+                        {tutor: rowan},
+                        {tutor: drj, note: "(12:30-)"}
                     ]
     const FRI_1_2 = [
                         {tutor: jamie},
-                        {tutor: maxwell},
-                        {tutor: seth, note: "(-1:30)"}
+                        {tutor: mary},
+                        {tutor: drj}
                     ]
     const FRI_2_3 = [
                         {tutor: jamie},
-                        {tutor: maxwell}
+                        {tutor: desi}
                     ]
     const FRI_3_4 = [
-                        {tutor: jamie},
-                        {tutor: nestor}
+                        {tutor: desi},
+                        {tutor: rowan}
                     ]
     const FRI_4_5 = ['CLOSED']
     const FRI_5_6 = ['CLOSED']
@@ -882,7 +914,7 @@
 
     <div class="flex flex-col items-center">
         <h2 class="text-4xl font-bold mt-10"> Tutor Schedule </h2>
-        <p class="w-3/4 md:w-2/3 lg:w-1/2 indent-7 m-4 leading-loose"> Each tutor is capable of teaching all areas of math; however, not all tutors can cover specialized subjects such as Calculus 2, Physics, and Computer Science. Additionally, each tutor has different available tutoring times. Please select subject(s) to find the tutor(s) or time slots that best fit your schedule and meet your needs.</p>
+        <p class="w-3/4 md:w-2/3 lg:w-1/2 indent-7 m-4 leading-loose"> Each tutor is capable of teaching all areas of math; however, not all tutors can cover specialized subjects such as Physics 1 and 2, and Computer Science 1 and 2. Additionally, each tutor has different available tutoring times. Please select subject(s) to find the tutor(s) or time slots that best fit your schedule and meet your needs.</p>
     </div>
 
     
