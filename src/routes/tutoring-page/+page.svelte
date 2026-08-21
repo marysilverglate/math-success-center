@@ -274,62 +274,29 @@
         return day.getDay();
     }
 
-
-
-    const andrew = {
-        // Tutor name
-        t_name : "Andrew", 
-        // Tutor color
-        t_color : 'red',
-        // Tutor subject(s)
-        t_subject : ["Computer Science", "Calculus 1", "Calculus 2", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
-        // Tutor hours
-        t_hours :  [
-                    /*M*/ [
-                            [14,15], [15,16], [16,17], [17,18]
-                          ],
-
-                    /*T*/ [
-                            [9.5, 10] , [10, 11], [11, 12] , [12, 13]
-                          ],
-
-                    /*W*/ [
-                            [9,10], [11.5, 12], [12, 13], [13, 14], [14,14.5]
-                          ],
-
-                    /*R*/ [
-                            [9.5, 10] , [10, 11], [11, 12] , [12, 13]
-                          ],
-
-                    /*F*/ [
-                            
-                          ]
-                  ]
-    };
-
     const bailey = {
         // Tutor name
         t_name : "Bailey", 
         // Tutor color
-        t_color : 'black',
+        t_color : 'purple',
         // Tutor subject(s)
-        t_subject : ["Calculus 1", "Calculus 2", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
+        t_subject : ["Calculus 1", "Calculus 2", "Computer Science 1", "Physics 1", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [13, 14], [18, 19], [19,20]
+                            
                           ],
                     /*T*/ 
                           [
-                            [9,10], [10,11], [12, 13], [13,14], [14,15], [15,16], [17,18], [18,19], [19,20]
+                            [15,16], [16,17], [17,18], [18,19], [19,20]
                           ],
                     /*W*/ 
                           [
-                            
+                            [15,16], [16,17], [17,18], [18,19], [19,20]
                           ],
                     /*R*/ 
                           [
-                            [12, 13], [13,14]
+                            [17,18], [18,19], [19,20]
                           ], 
                     /*F*/ 
                           [
@@ -344,120 +311,59 @@
         // Tutor Color
         t_color : 'red',
         // Tutor subject(s)
-        t_subject : ["Computer Science", "Calculus 1", "Calculus 2", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
+        t_subject : ["Computer Science 1", "Computer Science 2", "Calculus 1", "Calculus 2", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [10,11], [12, 13], [19, 20]
+                            [13,14], [14, 15], [17, 18], [18,19], [19,20]
                           ],
                     /*T*/ 
                           [
-                            [10,11], [11, 12], [19,20]
+                            [17, 18], [18,19], [19,20]
                           ],
                     /*W*/ 
                           [
-                            [10,11], [12, 13], [17, 18], [18, 19], [19, 20]
+                            [9, 10], [10,11]
                           ],
                     /*R*/ 
                           [
-                            [10,11], [11, 12], [19,20]
+                            [10,11], [11,12], [12,13], [13,14]
                           ], 
                     /*F*/ 
                           [
-                            [10,11]
+                            [12,13]
                           ] 
                    ]
     };
 
-    const nestor = {
-        // Tutor name
-        t_name : "Néstor", 
-        // Tutor Color
-        t_color : 'black',
-        // Tutor subject(s)
-        t_subject : ["Calculus 1", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
-        // Tutor hours
-        t_hours : [
-                    /*M*/ [ 
-                            [11, 12]
-                          ],
-                    /*T*/ 
-                          [
-                            [13, 14], [14, 15], [15, 16], [16, 17]
-                          ],
-                    /*W*/ 
-                          [
-                            [16, 17], [17, 18], [18, 19], [19, 20]
-                          ],
-                    /*R*/ 
-                          [
-                            [9, 10], [10, 11], [17, 18], [18, 19], [19, 20]
-                          ], 
-                    /*F*/ 
-                          [
-                            [15, 16]
-                          ] 
-                   ]
-    };
-
-    const seth = {
-        // Tutor name
-        t_name : "Seth", 
-        // Tutor color
-        t_color : "purple",
-        // Tutor subject(s)
-        t_subject : ["Computer Science", "Calculus 2", "Calculus 1", "Physics", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
-        // Tutor hours
-        t_hours : [
-                    /*M*/ [ 
-                            [9, 10], [10, 11], [13, 14], [14, 15], [18, 19], [19, 20]
-                          ],
-                    /*T*/ 
-                          [
-                            [16, 17], [17, 18]
-                          ],
-                    /*W*/ 
-                          [
-                            
-                          ],
-                    /*R*/ 
-                          [
-                            [15, 16], [16, 17], [17, 17.5]
-                          ], 
-                    /*F*/ 
-                          [
-                            [9, 10], [10,11], [11,12], [12, 13], [13, 13.5]
-                          ] 
-                   ]
-    };
 
     const nate = {
         // Tutor name
         t_name : "Nate", 
         // Tutor color
-        t_color : "black",
+        t_color : "red",
         // Tutor subject(s)
-        t_subject : ["Calculus 2", "Calculus 1", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
+        t_subject : ["Computer Science 1", "Computer Science 2", "Calculus 2", "Calculus 1", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [9, 10] , [10,11], [11, 12], [15, 16], [16, 17], [17, 18]
+                            [15, 16], [16, 17]
                           ],
                     /*T*/ 
                           [
-                            
+                            [12,13], [14.5,15], [15,16], [16,17]
                           ],
                     /*W*/ 
                           [
-                            [9, 10] , [10,11], [11, 12], [16, 17], [17, 18]
+                            [16, 17], [17, 18]
                           ],
                     /*R*/ 
                           [
-                            
+                            [14.5,15], [16, 17], [17, 18], [18,19], [19,20]
                           ], 
                     /*F*/ 
                           [
-                            [9, 10] , [10,11], [11, 12]
+                            [11, 12]
                           ] 
                    ]
     };
@@ -472,22 +378,22 @@
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [12.5, 13], [13, 14], [14, 15], 
+                            [9,10] , [10,11], [11,12], [12,13], [13,14], [14,15]
                           ],
                     /*T*/ 
                           [
                           ],
                     /*W*/ 
                           [
-                            [12.5, 13], [13, 14], [14, 15], [15, 16]
+                            [13,14], [14, 15], [15, 16]
                           ],
                     /*R*/ 
                           [
-                            [12, 13], [13, 14], [17.5, 18], [18, 19], [19, 20]
+                            
                           ], 
                     /*F*/ 
                           [
-                            [12.5, 13], [13, 14], [14, 15], [15, 16]
+                            [9,10] , [10,11], [11,12], [12,13], [13,14], [14,15]
                           ] 
                    ]
     };
@@ -496,29 +402,29 @@
         // Tutor name
         t_name : "Maxwell", 
         // Tutor color
-        t_color : "black",
+        t_color : "red",
         // Tutor subject(s)
-        t_subject : ["College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
+        t_subject : ["Calculus 1", "Calculus 2", "Computer Science 1", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus"],
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [15, 16], [16, 17], [17, 18]
+                            [9,10], [14,15], [15,16], [16,17]
                           ],
                     /*T*/ 
                           [
-                            
+                            [14.5,15], [15.16], [16,17]
                           ],
                     /*W*/ 
                           [
-                            [13.5, 14], [14, 15], [15, 16], 
+                            [9,10], [14,15], [15,16], [16,17]
                           ],
                     /*R*/ 
                           [
-                            [14.5, 15], [15, 16], [16, 17], [17, 18], [18, 19]
+                            [14.5,15], [15.16], [16,17], [17,18]
                           ], 
                     /*F*/ 
                           [
-                            [13, 14], [14, 15]
+                            [9,10]
                           ] 
                    ]
     };
@@ -533,30 +439,30 @@
         // Tutor hours
         t_hours : [
                     /*M*/ [ 
-                            [11, 12], [12, 13]
+                            [12, 13], [13,14]
                           ],
                     /*T*/ 
                           [
-                            [11, 12], [12, 13], [13, 14]
+                            [13, 14], [14,15]
                           ],
                     /*W*/ 
                           [
-                            [10, 11], [11, 12]
+                            [12, 13], [13,14]
                           ],
                     /*R*/ 
                           [
-                            [13.5, 14], [14, 14.5]
+                            [13, 14], [14,15.5]
                           ], 
                     /*F*/ 
                           [
-
+                            [13,14]
                           ] 
                    ]
     };
 
-    const melissa = {
+    const desi = {
         // Tutor name
-        t_name : "Melissa", 
+        t_name : "Desi", 
         // Tutor color
         t_color : "black",
         // Tutor subject(s)
@@ -568,37 +474,128 @@
                           ],
                     /*T*/ 
                           [
-                            [14, 15], [15, 16], [16, 17], [17,  18], [18, 19], [19, 20]
+                            
                           ],
                     /*W*/ 
                           [
-                            [15, 16], [16, 17], [18, 19], [19, 20]
+                            
                           ],
                     /*R*/ 
                           [
-                            [13, 14], [14, 15], [15, 16], [16, 17], 
+                            
                           ], 
                     /*F*/ 
                           [
-
+                            
                           ] 
                    ]
     };
 
+    const jordan = {
+        // Tutor name
+        t_name : "Jordan", 
+        // Tutor color
+        t_color : "purple",
+        // Tutor subject(s)
+        t_subject : ["Computer Science 1", "Physics 1", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus", "Calculus 1", "Calculus 2"],
+        // Tutor hours
+        t_hours : [
+                    /*M*/ [ 
+                            
+                          ],
+                    /*T*/ 
+                          [
+                            
+                          ],
+                    /*W*/ 
+                          [
+                            
+                          ],
+                    /*R*/ 
+                          [
+                            
+                          ], 
+                    /*F*/ 
+                          [
+                            
+                          ] 
+                   ]
+    };
 
+    const rowan = {
+        // Tutor name
+        t_name : "Rowan", 
+        // Tutor color
+        t_color : "red",
+        // Tutor subject(s)
+        t_subject : ["Computer Science 1", "Computer Science 2","College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus", "Calculus 1", "Calculus 2"],
+        // Tutor hours
+        t_hours : [
+                    /*M*/ [ 
+                            
+                          ],
+                    /*T*/ 
+                          [
+                            
+                          ],
+                    /*W*/ 
+                          [
+                            
+                          ],
+                    /*R*/ 
+                          [
+                            
+                          ], 
+                    /*F*/ 
+                          [
+                            
+                          ] 
+                   ]
+    };
+
+    const madison = {
+        // Tutor name
+        t_name : "Madison", 
+        // Tutor color
+        t_color : "blue",
+        // Tutor subject(s)
+        t_subject : ["Physics 1", "Physics 2", "College Algebra", "Intermediate Algebra", "Mathematical Structures for Teachers I", "Mathematical Structures for Teachers II", "Precalculus", "Basic Statistics", "Statistics for Natural Science", "Survey of Calculus", "Calculus 1", "Calculus 2"],
+        // Tutor hours
+        t_hours : [
+                    /*M*/ [ 
+                            
+                          ],
+                    /*T*/ 
+                          [
+                            
+                          ],
+                    /*W*/ 
+                          [
+                            
+                          ],
+                    /*R*/ 
+                          [
+                            
+                          ], 
+                    /*F*/ 
+                          [
+                            
+                          ] 
+                   ]
+    };
 
     // create list to hold tutor infomation
     const tutorList = [ 
-                     nestor, 
                      bailey, 
                      mattie, 
                      jamie, 
-                     andrew, 
-                     melissa, 
-                     seth, 
                      maxwell,
                      mary,
-                     nate
+                     nate,
+                     desi,
+                     jordan,
+                     rowan,
+                     madison
     ];
         
 
@@ -955,13 +952,23 @@
                 </Label>
 
                 <Label class="flex items-center">
-                    <Checkbox class="p-2 text-[var(--alt-lu-gold)]" value="Physics" on:change={(e) => handleSelectionChange(e)}/>
-                    Physics
+                    <Checkbox class="p-2 text-[var(--alt-lu-gold)]" value="Physics 1" on:change={(e) => handleSelectionChange(e)}/>
+                    Physics 1
                 </Label>
 
                 <Label class="flex items-center">
-                    <Checkbox class="p-2 text-[var(--alt-lu-gold)]" value="Computer Science" on:change={(e) => handleSelectionChange(e)}/>
-                    Computer Science 
+                    <Checkbox class="p-2 text-[var(--alt-lu-gold)]" value="Physics 2" on:change={(e) => handleSelectionChange(e)}/>
+                    Physics 2
+                </Label>
+
+                <Label class="flex items-center">
+                    <Checkbox class="p-2 text-[var(--alt-lu-gold)]" value="Computer Science 1" on:change={(e) => handleSelectionChange(e)}/>
+                    Computer Science 1
+                </Label>
+
+                <Label class="flex items-center">
+                    <Checkbox class="p-2 text-[var(--alt-lu-gold)]" value="Computer Science 2" on:change={(e) => handleSelectionChange(e)}/>
+                    Computer Science 2
                 </Label>
             </div>
         </div>
